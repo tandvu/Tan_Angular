@@ -1,0 +1,56 @@
+<div class="page-title">
+	<div class="page-title-text-full-screen">
+		<div>Virtualization Manager</div>
+		<div style="margin-left: 700px; font-size: 18px; margin-top: 15px">
+			<a class="page-title-link" href="#/exerciseListManager">Exercise Manager</a>
+			<a class="page-title-link" style="margin-left: 20px" href="#/templates">Template List</a>
+		</div>
+	</div>
+</div>
+
+<div class="body-div-full-screen">
+
+	<div class="title-center">Exercise List Manager</div>
+
+	<div>
+		<div style="margin-left: 700px">
+			<div style="float: left; margin-top: 5px; margin-right: 5px">Exercise:</div>
+			<!--select name="exerciseSelect" style="margin-left: 20px">
+ 				<option value="DisasterRelief-EX1">DisasterRelief-EX1</option>
+ 			</select-->
+ 			<select ng-model="trainingEvent" ng-options="trainingEvent.name for trainingEvent in trainingEvents" ng-change="requeryExerciseVMs()"></select>
+ 		</div>
+    	<div id="availableSystemTemplates" style="width: 500px; float: left;">
+    	    <div class="title-center">Available System Templates<img src="img/reload.jpg" ng-click="requeryTemplates()" style="margin-left: 15px; width:20px"/></div>
+    	    <div class="gridStyle" ng-grid="templateGridOptions"></div>
+		</div>	
+		<div style="margin-left: 530px">
+			<button name="StartProvisioning" ng-click="provisionVM()" style="margin-top: 200px; float: left;" src="/img/StartVM6.png">Add >></button>
+    		<div id="VMs" style="margin-left: 75px; width: 500px">
+    	    	<div class="title-center">Exercise Virtual Machines<img src="img/reload.jpg" ng-click="requeryExerciseVMs($event)" style="margin-left: 15px; width:20px"/></div>
+    	   		<div class="gridStyle" ng-grid="exerciseVMGridOptions"></div>
+    		</div>
+    	</div>
+    	
+    	<div style="margin-top: 30px; margin-left: 320px; width: 500px">
+    		<!--div>
+				<input type="button" value="Event Source" onClick="beginProvisioning();"/>
+			</div-->
+
+			<div>
+				<img style="display: none;" class="progress-waiting" src="img/waiting.gif">
+			</div>
+
+			<div style="display: none;" class="progress-wrapper">
+				<div class="progressbarBg">
+					<div id="progressbar" class="progressbar progressbarGreenGradient" style="width: 0%">
+						<div class="progressbarFill"></div>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<div class="progress-value"></div>
+			</div>
+		</div>
+</div>

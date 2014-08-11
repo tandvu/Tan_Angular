@@ -1,0 +1,73 @@
+[
+{
+  "PersonnelRecovery":[
+    {
+      "name": "Rescue Mission One",
+      "processName": "PersonnelRecovery",
+      "deploymentId": "J6.JMT.PersonnelRecovery:J6_Personnel_Recovery:2.0",
+      "processId": "J6PersonnelRecovery.PersonnelRecovery"
+
+    }
+  ]
+},
+{
+  "DisasterRelief": [
+    {
+      "name": "UJTL Test Mission",
+      "processName": "UJTL Test Process",
+      "deploymentId": "org.jelc:JELC.UJTLTesting:7.6.5",
+      "processId": "UJTLTesting.UJTLTestProc"
+    },
+    {
+      "name": "Force Source Mission",
+      "processName": "Force Sourcing Annual Top Level",
+      "deploymentId": "JMT.GFM.I.Doctrinal:GFM_Force_Sourcing_Annual_Top_Level:1.0",
+      "processId": "GFM_Force_Sourcing.ForceSourcingAnnualTopLevel"
+
+    },
+    {
+      "name": "Rain Check Mission",
+      "processName": "Check For Rain",
+      "deploymentId": "sprint4.jmm:CheckWeather:1.0",
+      "processId": "CheckWeatherREST-SVC"
+
+    },
+    {
+      "name": "Unstarted Mission",
+      "processName": "Non-existent process",
+      "deploymentId": "noone:nowhere:0.0.0",
+      "processId": "NotaProcess"
+    }
+  ]
+},
+  {
+    "PastExercise": [
+      {
+        "name": "Past Mission",
+        "processName": "Previously executedprocess",
+        "deploymentId": "oldone:of.the.mountains:1.0.0",
+        "processId": "OldProcess"
+      },
+      {
+        "name": "Past AOC Mission",
+        "processName": "Previously executed AOC",
+        "deploymentId": "JMT.AOC.I.Doctrinal:AOC:1.9",
+        "processId": "AOC"
+      }
+    ]
+  },
+  {
+    "TRAPExercise" : [
+      {
+        "_id": "53d7c7063ea24508241b8e1e",
+        "name": "TRAP Mission",
+        "processName": "Trip Trap TRAPProcess",
+        "deploymentId": "jmt.msco.demo:TRAP:1.0",
+        "processId": "TRAP.TRAPProcess"
+
+      }
+    ]
+  }
+
+]
+

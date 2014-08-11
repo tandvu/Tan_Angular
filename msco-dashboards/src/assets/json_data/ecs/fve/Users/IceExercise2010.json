@@ -1,0 +1,12 @@
+[{
+    "_id": "0",
+    "ldapId": "jladner",
+    "info":
+    {
+        "name": "Jared Ladner",
+        "email": "jared.ladner@geoent.com",
+        "phone": "228-688-1265"
+    },
+    "role": "unknown",
+    "group": "Planner"
+}]

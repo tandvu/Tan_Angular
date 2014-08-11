@@ -1,0 +1,26 @@
+<div ng-controller="OverviewCtrl">
+<h2>&nbsp;Current Tasks</h2>
+<div align="right">{{activeTaskList.length}} TASKS &nbsp;&nbsp;</div>
+<table class="table table-striped" style="width:90%;" align="center">
+    <thead>
+    <tr>
+        <th> Name </th>
+        <th> Missions </th>
+        <th> Assignee </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="item in activeTaskList">
+        <td>
+            {{item.name}}
+        </td>
+        <td>
+            {{item.missionName}}
+        </td>
+        <td>
+            {{item.user}}
+        </td>
+    </tr>
+    </tbody>
+</table>
+</div>

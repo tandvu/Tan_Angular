@@ -1,0 +1,38 @@
+<div class="row">
+  <h3>Mission Summary</h3>
+</div>
+<div class="row">
+  <h4>Current Tasks</h4>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <table width="80%" class="table table-striped">
+      <tr>
+        <th>Role/User</th>
+        <th>Task</th>
+        <th>Status</th>
+        <th>Expected Output</th>
+        <th>Skip Task</th>
+      </tr>
+      <tr ng-repeat="task in selectedMission.tasks" ng-show="!task.stopTime">
+        <td>{{task.role}}/{{task.user}}</td>
+        <td>{{task.name}}</td>
+        <td>{{task.state||"Not started"}}</td>
+        <td><table>
+          <tr ng-repeat="to in task.output"><td><a class="btn btn-link" title="{{to.description}}" target="_blank" href="{{to.url}}">{{to.name}}</a></td></tr>
+        </table></td>
+        <td>
+          <div ng-switch="!!task.startTime && !task.stopTime">
+            <div ng-switch-when="true">
+              <a class="btn btn-xs btn-link" ng-click="skipTask(task._id)"><span class="glyphicon glyphicon-step-forward"></span></a>
+            </div>
+            <div ng-switch-when="false">
+              &nbsp;
+            </div>
+          </div>
+        </td>
+      </tr>
+    </table>
+    <div ng-include="metricsTemplate.url"></div>
+  </div>
+</div>

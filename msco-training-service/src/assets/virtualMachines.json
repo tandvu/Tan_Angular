@@ -1,0 +1,157 @@
+[
+  {
+    "uid": "urn:vcloud:vm:a7357d64-4ccd-45ee-b10c-f1a88fb6a0dd",
+    "name": "JoeTest",
+    "computerName": "JoeTest",
+    "cpu": 2,
+    "memory": "3072 MB",
+    "runningStatus": "POWERED_ON",
+    "hardDisks": [
+      {
+        "diskName": "Hard disk 1",
+        "diskSize": "20480 MB",
+        "diskBusType": ""
+      }
+    ],
+    "networks": [
+      {
+        "cardIndex": 0,
+        "ip0": "",
+        "mac": "00:50:56:01:00:b4",
+        "network": "ValiantShield2014AppNet",
+        "mode": "DHCP"
+      },
+      {
+        "cardIndex": 1,
+        "ip1": "",
+        "mac": "00:50:56:01:00:b5",
+        "network": "ValiantShield2014DisNet",
+        "mode": "DHCP"
+      }
+    ]
+  },
+  {
+    "uid": "urn:vcloud:vm:47c9a8b3-be1a-4c97-a156-22af258b6a34",
+    "name": "TEST1",
+    "computerName": "TEST1",
+    "cpu": 2,
+    "memory": "3072 MB",
+    "runningStatus": "POWERED_ON",
+    "hardDisks": [
+      {
+        "diskName": "Hard disk 1",
+        "diskSize": "20480 MB",
+        "diskBusType": ""
+      }
+    ],
+    "networks": [
+      {
+        "cardIndex": 0,
+        "ip": "169.254.5.92",
+        "mac": "00:50:56:01:00:ac",
+        "network": "ValiantShield2014AppNet",
+        "mode": "DHCP"
+      },
+      {
+        "cardIndex": 1,
+        "ip": "192.168.1.101",
+        "mac": "00:50:56:01:00:ad",
+        "network": "ValiantShield2014OrgNet",
+        "mode": "DHCP"
+      }
+    ]
+  },
+  {
+    "uid": "urn:vcloud:vm:db5e2272-9ac3-4d62-b306-0a84e8cceedc",
+    "name": "TEST2",
+    "computerName": "TEST2",
+    "cpu": 2,
+    "memory": "3072 MB",
+    "runningStatus": "POWERED_ON",
+    "hardDisks": [
+      {
+        "diskName": "Hard disk 1",
+        "diskSize": "20480 MB",
+        "diskBusType": ""
+      }
+    ],
+    "networks": [
+      {
+        "cardIndex": 0,
+        "ip": "169.254.5.102",
+        "mac": "00:50:56:01:00:ae",
+        "network": "ValiantShield2014AppNet",
+        "mode": "DHCP"
+      },
+      {
+        "cardIndex": 1,
+        "ip": "192.168.1.102",
+        "mac": "00:50:56:01:00:af",
+        "network": "ValiantShield2014OrgNet",
+        "mode": "DHCP"
+      }
+    ]
+  },
+  {
+    "uid": "urn:vcloud:vm:8d987760-52cd-4af5-a9d4-b1e244569b47",
+    "name": "TEST3",
+    "computerName": "TEST3",
+    "cpu": 2,
+    "memory": "3072 MB",
+    "runningStatus": "SUSPENDED",
+    "hardDisks": [
+      {
+        "diskName": "Hard disk 1",
+        "diskSize": "20480 MB",
+        "diskBusType": ""
+      }
+    ],
+    "networks": [
+      {
+        "cardIndex": 0,
+        "ip": "169.254.5.112",
+        "mac": "00:50:56:01:00:b0",
+        "network": "ValiantShield2014AppNet",
+        "mode": "DHCP"
+      },
+      {
+        "cardIndex": 1,
+        "ip": "169.254.5.117",
+        "mac": "00:50:56:01:00:b1",
+        "network": "ValiantShield2014DisNet",
+        "mode": "DHCP"
+      }
+    ]
+  },
+  {
+    "uid": "urn:vcloud:vm:081187f4-2ed2-4f58-800f-c86f10591e00",
+    "name": "TEST4",
+    "computerName": "TEST4",
+    "cpu": 2,
+    "memory": "3072 MB",
+    "runningStatus": "POWERED_OFF",
+    "hardDisks": [
+      {
+        "diskName": "Hard disk 1",
+        "diskSize": "20480 MB",
+        "diskBusType": ""
+      }
+    ],
+    "networks": [
+      {
+        "cardIndex": 0,
+        "ip0": "",
+        "mac": "00:50:56:01:00:b2",
+        "network": "ValiantShield2014AppNet",
+        "mode": "DHCP"
+      },
+      {
+        "cardIndex": 1,
+        "ip1": "",
+        "mac": "00:50:56:01:00:b3",
+        "network": "ValiantShield2014DisNet",
+        "mode": "DHCP"
+      }
+    ]
+  }
+]

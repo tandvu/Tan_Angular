@@ -1,0 +1,18 @@
+<div id="MissionsPg">
+    <div class="container">
+        <div class="row">
+            <h1 class="pageSubTitle">Missions</h1>
+        </div>
+    </div>
+
+    <div id="missions" class="row">
+        <div id="missionsCarousel" class="owl-carousel ng-cloak">
+            <a class="item" ng-if="missions" ng-repeat="mission in missions" ng-click="loadMissionSummary(mission)"
+               ng-class="{selectedMission: $index == selectedMission.index}">
+                {{mission.name | characters: 48}}
+            </a>
+        </div>
+    </div>
+</div>
+
+<div ui-view="tasks"></div>

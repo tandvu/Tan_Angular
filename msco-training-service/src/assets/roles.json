@@ -1,0 +1,109 @@
+{
+  "PersonnelRecovery": [
+  {
+    "role": "Isolated Personnel Voice",
+    "assignment": "Training Audience"
+  },
+  {
+    "role": "AN/PRC-117F Radio",
+    "assignment": "Training Audience"
+  },
+  {
+    "role": "JPRC Staff",
+    "assignment": "Training Audience"
+  },
+  {
+    "role": "JPRC SARMASTER (System)",
+    "assignment": "Training Audience"
+  },
+  {
+    "role": "JPRC Personnel Recovery System",
+    "assignment": "Training Audience"
+  },
+  {
+    "role": "JPRC Chat",
+    "assignment": "Training Audience"
+  },
+  {
+    "role": "PRCC Staff",
+    "assignment": "Training Audience"
+  },
+  {
+    "role": "PROC SARMASTER (System)",
+    "assignment": "Training Audience"
+  },
+  {
+    "role": "PRCC Personnel Recovery System",
+    "assignment": "Training Audience"
+  },
+  {
+    "role": "PRCC Chat",
+    "assignment": "Training Audience"
+  },
+  {
+    "role": "Unit Operations Center",
+    "assignment": "Training Audience"
+  }
+],
+
+"DisasterRelief" : [
+  {
+    "role": "SECDEF \\ CJCS",
+    "assignment": "Training Audience"
+  },
+  {
+    "role": "CCDR",
+    "assignment": "Training Audience"
+  },
+  {
+    "role": "GFMB",
+    "assignment": "Training Audience"
+  },
+  {
+    "role": "J35 South",
+    "assignment": "Training Audience"
+  },
+  {
+    "role": "J35 North",
+    "assignment": "Training Audience"
+  },
+  {
+    "role": "Joint Force Provider (JFP) / Joint Force Coordinator (JFC JS J35 South)",
+    "assignment": "Training Audience"
+  },
+  {
+    "role": "Service HQ, JFPs, and Components",
+    "assignment": "Training Audience"
+  },
+  {
+    "role": "JFP Service Component",
+    "assignment": "Training Audience"
+  },
+  {
+    "role": "Assistant Meteorologist",
+    "assignment": "Training Audience"
+  }
+],
+
+  "ExerciseTemplate" : [],
+
+  "TRAPExercise": [
+    {
+      "role": "National Command Authority",
+      "assignment": "Training Audience"
+    },
+    {
+      "role": "JTF CDR and Staff",
+      "assignment": "Training Audience"
+    },
+    {
+      "role": "JTF Watch Captain",
+      "assignment": "Training Audience"
+    },
+    {
+      "role": "CFMCC",
+      "assignment": "Training Audience"
+    }
+  ]
+
+}

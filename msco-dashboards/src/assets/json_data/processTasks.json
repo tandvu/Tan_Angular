@@ -1,0 +1,29 @@
+[{
+    "label": "all",
+    "children": [{
+        "label": "Task 1",
+        "children": [{
+                "label": "SubTaskWithLongName",
+                "children": [{
+                        "label": "LeafTask 1"
+                    }, {
+                        "label": "LeafTask 2"
+                    }
+                ]
+            }, {
+                "label": "Write Report",
+                "children": [{
+                        "label": "SubTask 2 content"
+                    }
+                ]
+            }
+        ]
+    }, {
+        "label": "Send Email",
+        "children": [{
+            "label": "Task 2 content"
+        }]
+    }, {
+        "label": "Update Status"
+    }]
+}]

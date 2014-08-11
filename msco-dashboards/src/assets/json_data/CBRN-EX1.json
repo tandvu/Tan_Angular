@@ -1,0 +1,84 @@
+{
+  "_collectiondata": [
+    {
+      "name": "DisasterRelief_JSAF",
+      "system_name": "JSAF",
+      "description": "JSAF VM Disaster Relief scenario",
+      "version": "4.6.0.4",
+      "unique_cloud_vm_id": "MSCO-DEMO<0xdelimit>msco-esxi3.sd.spawar.navy.mil<0xdelimit>DisasterRelief_JSAF",
+      "VLAN": "21",
+      "properties": "",
+      "deployment_status": "deployed",
+      "url": "http://msco-db.sd.spawar.navy.mil/nm.php/DisasterRelief-EX1/TrngEventVirtualSystems/1397087512825",
+      "time": "2014-05-28 19:09:13",
+      "cpu_usage" : "50"
+    },
+    {
+      "name": "JBUS",
+      "system_name": "JBUS",
+      "description": "Joint Simulation Bus",
+      "version": "4.3",
+      "unique_cloud_vm_id": "MSCO-DEMO<0xdelimit>msco-esxi3.sd.spawar.navy.mil<0xdelimit>JBUS",
+      "VLAN": "21",
+      "properties": "",
+      "deployment_status": "deployed",
+      "url": "http://msco-db.sd.spawar.navy.mil/nm.php/DisasterRelief-EX1/TrngEventVirtualSystems/1397249006475",
+      "time": "2014-05-28 19:11:16",
+      "cpu_usage" : "81"
+    },
+    {
+      "name": "DisasterRelief_GCCS-J",
+      "system_name": "GCCS-J",
+      "description": "GCCS Disaster Relief scenario",
+      "version": "4.3",
+      "unique_cloud_vm_id": "MSCO-DEMO<0xdelimit>msco-esxi3.sd.spawar.navy.mil<0xdelimit>DisasterRelief_GCCS-J",
+      "VLAN": "21",
+      "properties": "",
+      "deployment_status": "deployed",
+      "url": "http://msco-db.sd.spawar.navy.mil/nm.php/DisasterRelief-EX1/TrngEventVirtualSystems/1397149668292",
+      "time": "2014-05-28 19:18:29",
+      "cpu_usage" : "42"
+    },
+    {
+      "name": "DisasterRelief_GClient",
+      "system_name": "GCCS-J",
+      "description": "GCCS Disaster Relief scenario",
+      "version": "4.3",
+      "unique_cloud_vm_id": "MSCO-DEMO<0xdelimit>msco-esxi3.sd.spawar.navy.mil<0xdelimit>DisasterRelief_GClient",
+      "VLAN": "21",
+      "properties": "",
+      "deployment_status": "deployed",
+      "url": "http://msco-db.sd.spawar.navy.mil/nm.php/DisasterRelief-EX1/TrngEventVirtualSystems/1397149679333",
+      "time": "2014-05-28 19:19:55",
+      "cpu_usage" : "78"
+    },
+    {
+      "name": "DisasterRelief-EX1_JBUS",
+      "system_name": "JBUS",
+      "description": "Simulation Data Distribution Bus",
+      "version": "4.6.0.4",
+      "unique_cloud_vm_id": "",
+      "VLAN": "21",
+      "template_uri": "C:\\OVFs\\JBUS.ovf",
+      "properties": "",
+      "deployment_status": "undeployed",
+      "url": "http://msco-db.sd.spawar.navy.mil/nm.php/DisasterRelief-EX1/TrngEventVirtualSystems/1401348626178",
+      "time": "2014-05-29 00:30:26",
+      "cpu_usage" : "96"
+    },
+    {
+      "name": "DisasterRelief-EX1_JSAF",
+      "system_name": "JSAF",
+      "description": "Sim",
+      "version": "1.0",
+      "unique_cloud_vm_id": "MSCO-DEMO<0xdelimit>msco-esxi3.sd.spawar.navy.mil<0xdelimit>DisasterRelief-EX1_JSAF",
+      "VLAN": "21",
+      "template_uri": "C:\\OVFs\\DisasterRelief_JSAF.ovf",
+      "properties": "",
+      "deployment_status": "deployed",
+      "url": "http://msco-db.sd.spawar.navy.mil/nm.php/DisasterRelief-EX1/TrngEventVirtualSystems/1401303951532",
+      "time": "2014-05-29 00:54:41",
+      "cpu_usage" : "35"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+<div style="height:100%;">
+  <div class="row" style="height:100%;">
+    <!-- summary/task list on the left -->
+    <div class="col-xs-2">
+      <div class="btn-group-vertical" >
+        <button class="btn btn-default" ng-model="selectedTaskOption" btn-radio="'Summary'" ng-click="selectSummary()" >Summary</button>
+        <button ng-repeat="task in selectedMission.tasks" class="btn btn-default" ng-model="selectedTaskOption" btn-radio="task.name" ng-click="selectTask(task)" title="{{task.name}}">{{task.name|characters:25}}</button>
+      </div>
+    </div>
+    <!-- mission summary or task details -->
+    <div class="col-xs-10" style="height:100%;">
+      <div ng-switch="selectedMissionOption" style="height:100%;">
+        <div style="height:100%;" ng-switch-when="Summary"><div style="height:100%;" ng-include="summaryTemplate.url"></div></div>
+        <div style="height:100%;" ng-switch-when="Task">
+          <div style="height:50%;" ng-include="taskTemplate.url"></div>
+          <div style="height:50%;" ng-include="metricsTemplate.url"></div>
+        </div>
+        <div style="height:100%;" ng-switch-default="default">Select a Mission above...</div>
+      </div>
+    </div>
+
+  </div>
+
+</div>

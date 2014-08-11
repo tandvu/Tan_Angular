@@ -1,0 +1,78 @@
+<div class="page-title">
+	<div class="page-title-text-full-screen">
+		<div>Virtualization Manager</div>
+		<div style="margin-left: 700px; font-size: 18px; margin-top: 15px">
+			<a class="page-title-link" href="#/exerciseListManager">Exercise Manager</a>
+			<a class="page-title-link" style="margin-left: 20px" href="#/templates">Template List</a>
+		</div>
+	</div>
+</div>
+
+<div class="body-div-full-screen">
+
+	<div class="title-center">Template List Manager</div>
+
+	<div>
+	    <div id="availableSystemTemplates" style="width: 500px; float: left;" >
+	        <div class="title-center">Available System Templates<img src="img/reload.jpg" ng-click="requeryTemplates()" style="margin-left: 15px; width:20px"/><a style="margin-left: 20px" ng-click="alert(1)">New</a></div>
+	        <div class="gridStyle" ng-grid="templateGridOptions"></div>
+		</div>
+	
+		<form id="form" enctype="multipart/form-data">	
+			<div style="margin-left: 620px">
+	        	<div style="margin-top: 80px">
+	        		<div style="width: 100px; float: left;">
+   	            		<div style="margin-top: 8px; margin-bottom: 17px;">System:</div>
+   	            		<div style="margin-top: 8px; margin-bottom: 17px;">VLAN:</div>
+   	            		<div style="margin-top: 8px; margin-bottom: 17px;">Template File:</div>
+   	            		<div style="margin-top: 8px; margin-bottom: 93px;">Description:</div>
+   	            		<div style="margin-top: 8px; margin-bottom: 17px;">Upload Date:</div>     
+		        	</div>
+        
+		        	<div style="margin-left: 120px">
+	       				<!--div><input type="text" style="" ng-model="template.system"/></div-->
+	       				<div>
+		       	   			<select name="systemSelect">
+ 								<option value="GCCS-J 4.3">GCCS-J 4.3</option>
+								<option value="JSAF">JSAF</option>
+ 							</select>
+ 						</div>
+ 						<!--div><input type="text" style="" ng-model="template.vlan"/></div-->
+ 						<div>
+	    	   	   			<select name="vlanSelect">
+ 								<option value="21">Web - 21</option>
+								<option value="22">Application - 22</option>
+								<option value="23">Database -23</option>
+ 							</select>
+ 						</div>  	    
+	       				<div><!--input id="templateFileName" type="url" style="" ng-model="template.file"/--><input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelected();"/></div>
+	        			<div><textarea rows="4" style="resize: none" ng-model="template.description"/></div>
+   		     			<div><input id="templateDate" name="templateDate" type="text" ng-model="template.uploaddate" value="asdf"></div>
+        			</div>	  
+				</div>
+        	
+    			<div style="height: 20px; margin-bottom 20px" class="row">
+      				<input style="margin-left: 190px" type="button" onclick="uploadFile()" value="Upload" />
+    			</div>
+
+				<div style="width: 350px">    
+    				<div>
+						<img style="display: none;" class="progress-waiting" src="img/waiting.gif">
+					</div>
+
+					<div style="display: none;" class="progress-wrapper">
+						<div class="progressbarBg">
+							<div id="progressbar" class="progressbar progressbarGreenGradient" style="width: 0%">
+								<div class="progressbarFill"></div>
+							</div>
+						</div>
+					</div>
+
+					<div>
+						<div class="progress-value"></div>
+					</div>
+				</div>
+  			</div>
+  		</form>
+	</div>
+</div>

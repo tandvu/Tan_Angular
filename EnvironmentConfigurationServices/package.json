@@ -1,0 +1,23 @@
+{
+    "name": "vConfigServicesREST",
+    "description": "ECS Virtual Configuration Services REST Service",
+    "version":"0.0.1",
+    "private":true,
+    "scripts": {
+        "test": "mocha -R spec test/test-*.js"
+    },    
+    "dependencies": {
+        "express":"3.x",
+		"async":"0.6.2",
+		"mongoose":"3.8.x",
+        "node-forge": "0.6.x",
+        "restify": "*",
+        "xml2js": "*",
+        "seq-queue": "*",
+        "commander": "2.x"
+    },
+    "devDependencies": {
+        "mocha": "1.x"
+    }
+}
+  

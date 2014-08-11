@@ -1,0 +1,19 @@
+<div class="modal-body" ng-controller="StartCtrl">
+  <div class="row">
+    <div class="col-xs-4"><label for="selectExerciseControl">Exercise</label></div>
+    <div class="col-xs-8"><select class="form-control" ng-model="formExercise" id="selectExerciseControl" ng-options="exercise.name for exercise in exerciseItems" ng-change="selectExercise()" ></select></div>
+  </div>
+  <div class="row">
+    <div class="col-xs-4"><label for="selectUserControl">User</label></div>
+    <!--<div class="col-xs-8"><input type="text" class="form-control" ng-model="formUser" id="selectUserControl" ng-click="onUserClick()"/></div>-->
+    <div class="col-xs-8"><select class="form-control" ng-model="formUser" id="selectUserControl" ng-options="user.info.name for user in userItems" ng-change="selectUser()" ng-disabled="usersNotLoaded"></select></div>
+  </div>
+  <div class="row">
+    <div class="col-xs-4"><label for="selectRoleControl">Role</label></div>
+    <div class="col-xs-8"><select class="form-control" ng-model="formRole" id="selectRoleControl" ng-options="item.role for item in roleItems" ng-change="selectRole()" ng-disabled="rolesNotLoaded"></select></div>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-primary" ng-click="close()" ng-disabled="formNotReady">Join</button>
+    <!--<button type="button" class="btn btn-warning" ng-click="close()">Close</button>-->
+  </div>
+</div>

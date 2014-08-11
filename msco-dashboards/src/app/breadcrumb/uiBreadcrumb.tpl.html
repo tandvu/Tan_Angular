@@ -1,0 +1,11 @@
+<div class="container">
+    <ol class="breadcrumb">
+        <li>
+            <a ui-sref="exercise">Exercises</a>
+        </li>
+        <li ng-repeat="crumb in breadcrumbs" ng-class="{ active: $last }">
+            <a ui-sref="{{ crumb.route }}" ng-if="!$last">{{ crumb.displayName }}</a>
+            <span ng-show="$last">{{ crumb.displayName }}</span>
+        </li>
+    </ol>
+</div>

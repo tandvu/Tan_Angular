@@ -1,0 +1,73 @@
+<div id="exercisesPg" class="container">
+    <div class="pageSubTitle"><h1>Exercises</h1></div>
+
+    <div>
+        <table ng-table="tableParams" template-pagination="custom/pager" class="ng-cloak table table-striped">
+            <tr ng-repeat="exercise in $data" ng-controller="MissionCtrl">
+                <td data-title="'Name'" style="width:20%" sortable="'name'" header-class="text-left">
+                    <a ui-sref="overview({exerciseName:'{{exercise.name}}'})">{{exercise.name}}
+                    </a>
+                </td>
+                <td data-title="'POC'" style="text-align:left; width:17%" sortable="'poc.name'"
+                    header-class="text-left">{{exercise.poc.name}}
+                    <br>({{exercise.command}})
+                </td>
+                <td data-title="'Start Time'" style="text-align:left; width:15%" header-class="text-left">
+                    <div ng-if="startTime != null">
+                        {{startTime | date:'ddHHmm'}}Z{{startTime | date:'MMMyy' | uppercase}}<br/>
+                    </div>
+                </td>
+                <td data-title="'Total Time'" style="text-align:left; width:12%" header-class="text-left">
+                    {{totalTime}}
+                </td>
+                <td data-title="'Active Missions'" style="text-align:left; width:21%" header-class="text-left">
+                    <ul class="list-unstyled">
+                        <li ng-repeat="mission in activeMissions | orderBy: time">
+                            <span ng-bind="mission.name"></span>
+                        </li>
+                    </ul>
+                </td>
+                <td style="text-align:right; width:15%">
+                    <!--  <a href="#/missions" tooltip-placement="top" tooltip="Not implemented yet">
+                         Missions</a>&nbsp;&nbsp;&nbsp; -->
+                    <a ui-sref="missions({exerciseName:'{{exercise.name}}'})">
+                        Missions
+                    </a>
+                    &nbsp;|&nbsp;
+                    <a ui-sref="vmInfo({exerciseName:'{{exercise.name}}'})">
+                        Systems
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script type="text/ng-template" id="custom/pager">
+        <ul class="pager ng-cloak">
+            <li ng-repeat="page in pages"
+                ng-class="{'disabled': !page.active, 'previous': page.type == 'prev', 'next': page.type == 'next'}"
+                ng-show="page.type == 'prev' || page.type == 'next'" ng-switch="page.type">
+                <a ng-switch-when="prev" ng-click="params.page(page.number)" href="">&laquo; Previous</a>
+                <a ng-switch-when="next" ng-click="params.page(page.number)" href="">Next &raquo;</a>
+            </li>
+            <li>
+                <div class="btn-group">
+                    <button type="button" ng-class="{'active':params.count() == 10}" ng-click="params.count(10)"
+                            class="btn btn-default">10
+                    </button>
+                    <button type="button" ng-class="{'active':params.count() == 25}" ng-click="params.count(25)"
+                            class="btn btn-default">25
+                    </button>
+                    <button type="button" ng-class="{'active':params.count() == 50}" ng-click="params.count(50)"
+                            class="btn btn-default">50
+                    </button>
+                    <button type="button" ng-class="{'active':params.count() == 100}" ng-click="params.count(100)"
+                            class="btn btn-default">100
+                    </button>
+                </div>
+            </li>
+        </ul>
+    </script>
+</div>
+
+</div>

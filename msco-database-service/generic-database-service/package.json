@@ -1,0 +1,29 @@
+{
+    "name": "generic-database-service",
+    "description": "MSCO Generic Database Service",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "pretest": "jshint **/*.js",
+        "test": "mocha -R spec test/test-*.js",
+        "start": "node generic-database-service.js"
+    },
+    "dependencies": {
+        "async": "0.x",
+        "body-parser": "1.x",
+        "commander": "2.x",
+        "express": "4.x",
+        "moment": "2.x",
+        "mongodb": "1.x",
+        "morgan": "1.x",
+        "msco-consumer": "*",
+        "node-forge": "0.6.x",
+        "passport": "0.2.x",
+        "simple-errors": "0.0.x"
+    },
+    "devDependencies": {
+        "jshint": "2.5.x",
+        "mocha": "1.x",
+        "supertest": "0.x"
+    }
+}

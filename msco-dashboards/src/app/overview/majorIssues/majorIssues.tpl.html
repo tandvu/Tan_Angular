@@ -1,0 +1,13 @@
+<div ng-controller="OverviewCtrl">
+<h2>&nbsp;Major Issues</h2>
+<div align="right">{{errors.length}} Issues &nbsp;&nbsp;</div>
+<table class="table table-striped" style="width:90%;" align="center">
+    <tbody>
+    <tr ng-repeat="item in errors">
+        <td>
+            {{item.message}}
+        </td>
+    </tr>
+    </tbody>
+</table>
+</div>

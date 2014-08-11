@@ -1,0 +1,76 @@
+[
+    {
+        "_id": "53bc9b22b1fa1adf528fc5f1",
+        "name": "TEST2",
+        "computerName": "TEST2",
+        "systemName": "JSAF",
+        "description": "This is a test",
+        "version": "4.4.4",
+        "vlans": [
+            {
+                "name": "App VLAN",
+                "type": "App"
+            },
+            {
+                "name": "Db VLAN",
+                "type": "Db"
+            },
+            {
+                "name": "Distributed Interactive Simulation (DIS) VLAN",
+                "type": "Dis"
+            },
+            {
+                "name": "Org VLAN",
+                "type": "Org"
+            }
+        ],
+        "templateName": "TEST_JSAF",
+        "deploymentStatus": "DEPLOYED",
+        "time": "2014-07-10 17:42:33",
+        "workingStatus": {
+            "status": "Completed",
+            "currentStage": "1",
+            "endStage": "1",
+            "percentComplete": "28",
+            "statusDescription": "Completed provisioning of VM : TEST2 from Template: TEST_JSAF in Event : ValiantShield2014"
+        },
+        "uniqueCloudVmId": "5678abcd"
+    },
+    {
+        "_id": "53bc9b22b1fa1adf528fc5f1",
+        "name": "TEST3",
+        "computerName": "TEST3",
+        "systemName": "JSAF",
+        "description": "This is a test",
+        "version": "4.4.4",
+        "vlans": [
+            {
+                "name": "App VLAN",
+                "type": "App"
+            },
+            {
+                "name": "Db VLAN",
+                "type": "Db"
+            },
+            {
+                "name": "Distributed Interactive Simulation (DIS) VLAN",
+                "type": "Dis"
+            },
+            {
+                "name": "Org VLAN",
+                "type": "Org"
+            }
+        ],
+        "templateName": "TEST_JSAF",
+        "deploymentStatus": "DEPLOYED",
+        "time": "2014-07-10 17:42:33",
+        "workingStatus": {
+            "status": "Completed",
+            "currentStage": "1",
+            "endStage": "1",
+            "percentComplete": "28",
+            "statusDescription": "Completed provisioning of VM : TEST2 from Template: TEST_JSAF in Event : ValiantShield2014"
+        },
+        "uniqueCloudVmId": "1234abcd"
+    }
+]

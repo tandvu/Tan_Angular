@@ -1,0 +1,28 @@
+<div class="listbox-selector">
+	<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 panel panel-default">
+		<div class="selectable_header">{{itemsHeader}}</div>
+		<input class="form-control filter-control" ng-model="selectableSearch.value" placeholder="Enter filter text..."/>
+		<ul class="list-unstyled">
+			<li ng-repeat="selectableItem in selectableItems | filter:selectableSearch:strict | orderBy:'value'">
+				<input type="checkbox" ng-model="selectableItem.selected"/>
+				{{selectableItem.value}}
+			</li>
+		</ul>
+	</div>
+
+	<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 text-center">
+		<button type="button" class="btn btn-default" ng-click="removeItems()"><span class="glyphicon glyphicon-arrow-left"></span></button>
+		<button type="button" class="btn btn-default" ng-click="insertItems()"><span class="glyphicon glyphicon-arrow-right"></span></button>
+	</div>
+
+	<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 panel panel-default">
+		<div class="selected_header">{{resultsHeader}}</div>
+		<input class="form-control filter-control" ng-model="selectedSearch.value" placeholder="Enter filter text..."/>
+		<ul class="list-unstyled">
+			<li ng-repeat="selectedItem in selectedItems | filter:selectedSearch:strict | orderBy:'value'">
+				<input type="checkbox" ng-model="selectedItem.selected"/>
+				{{selectedItem.value}}
+			</li>
+		</ul>
+	</div>
+</div>

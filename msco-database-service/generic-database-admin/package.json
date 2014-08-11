@@ -1,0 +1,32 @@
+{
+    "name": "generic-database-admin",
+    "description": "MSCO Generic Database Authorization Administration Interface",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "pretest": "jshint **/*.js",
+        "test": "mocha -R spec test/test-*.js",
+        "start": "node generic-database-admin.js"
+    },
+    "dependencies": {
+        "async": "0.x",
+        "body-parser": "1.x",
+        "commander": "2.x",
+        "connect-mongo": "*",
+        "express": "4.x",
+        "express-session": "1.6.x",
+        "jade": "1.x",
+        "moment": "2.x",
+        "mongoose": "3.8.x",
+        "morgan": "1.x",
+        "msco-consumer": "*",
+        "prompt": "0.2.x",
+        "passport": "0.2.x"
+
+    },
+    "devDependencies": {
+        "jshint": "2.5.x",
+        "mocha": "1.x",
+        "supertest": "0.x"
+    }
+}

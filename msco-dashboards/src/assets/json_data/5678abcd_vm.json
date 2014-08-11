@@ -1,0 +1,57 @@
+[
+    {
+        "uid": "urn:vcloud:vm:31c86d27-5215-4822-965d-a21461c7ff02",
+        "name": "TEST4",
+        "computerName": "TEST2",
+        "cpu": 1,
+        "memory": "1024 MB",
+        "runningStatus": "POWERED_ON",
+        "hardDisks": [
+            {
+                "diskName": "Hard disk 1",
+                "diskSize": "20480 MB",
+                "diskBusType": ""
+            },
+            {
+                "diskName": "Hard disk 2",
+                "diskSize": "20480 MB",
+                "diskBusType": ""
+            },
+            {
+                "diskName": "Hard disk 3",
+                "diskSize": "20480 MB",
+                "diskBusType": ""
+            }
+        ],
+        "networks": [
+            {
+                "cardIndex": 0,
+                "ip0": "",
+                "mac": "00:50:56:01:00:a0",
+                "network": "ValiantShield2014AppNet",
+                "mode": "DHCP"
+            },
+            {
+                "cardIndex": 1,
+                "ip1": "",
+                "mac": "00:50:56:01:00:a1",
+                "network": "ValiantShield2014DbNet",
+                "mode": "DHCP"
+            },
+            {
+                "cardIndex": 2,
+                "ip2": "",
+                "mac": "00:50:56:01:00:74",
+                "network": "ValiantShield2014DisNet",
+                "mode": "DHCP"
+            },
+            {
+                "cardIndex": 3,
+                "ip3": "",
+                "mac": "00:50:56:01:00:82",
+                "network": "ValiantShield2014OrgNet",
+                "mode": "DHCP"
+            }
+        ]
+    }
+]

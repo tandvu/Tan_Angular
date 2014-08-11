@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en" ng-app="managerApp">
+<head>
+  <meta charset="utf-8">
+  <title>MSCO Server Sent Events</title>
+  <script src="/lib/jquery/jquery-1.10.2.js"></script>
+  <script src="/external/progressbar/js/server_sent_events.js"></script>
+</head>
+<body>
+    			<div style="height: 20px; margin-bottom 20px" class="row">
+      				<input style="margin-left: 190px" type="button" onclick="beginProvisioning()" value="Upload" />
+    			</div>
+
+				<div style="width: 350px">    
+    				<div>
+						<img style="display: none;" class="progress-waiting" src="img/waiting.gif">
+					</div>
+
+					<div style="display: none;" class="progress-wrapper">
+						<div class="progressbarBg">
+							<div id="progressbar" class="progressbar progressbarGreenGradient" style="width: 0%">
+								<div class="progressbarFill"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div>
+					<div class="progress-value"></div>
+				</div>
+  			</div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+    "user": {
+        "salt": "p~:g=P-%%%Np;!A~1;~%%;F-!B_lL8r.%^a7^*GY1P9|%-JYR+:!2|KB=_5w|2yF",
+        "iterations": 100000,
+        "keylength": 64
+    },
+    "session": {
+        "secret": "ES}&3.n1ez6/27S79AE&hhc0%&B754^Q!8%8SHMkJZ-,~&3p9)W~3%8q~'2X46ea"
+    }
+}

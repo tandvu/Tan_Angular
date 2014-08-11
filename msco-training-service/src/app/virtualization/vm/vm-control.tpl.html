@@ -1,0 +1,3 @@
+<i class="fa fa-play" ng-click="startVM(row.entity)" ng-class="(row.entity.runningStatus=='POWERED_OFF' || row.entity.runningStatus=='SUSPENDED') ? 'displayRow' : 'nondisplayRow'" style="cursor: pointer; margin-left: 8px; margin-top:8px"></i>
+<i class="fa fa-pause"  ng-click="suspendVM(row.entity)" ng-class="(row.entity.runningStatus=='POWERED_ON') ? 'displayRow' : 'nondisplayRow'" style="cursor: pointer; margin-left: 8px; margin-top:8px"></i>
+<i class="fa fa-stop" ng-click="stopVM(row.entity)" ng-class="(row.entity.runningStatus=='POWERED_ON') ? 'displayRow' : 'nondisplayRow'" style="cursor: pointer; margin-left: 8px; margin-top:8px"></i>

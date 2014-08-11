@@ -1,0 +1,88 @@
+<div id="vmPg" class="container">
+    <div class="row">
+        <h1 class="pageSubTitle">{{selectedExercise.name}}- VM List</h1>
+    </div>
+
+    <div us-spinner spinner-key="spinner-1" spinner-start-active="1">
+        <table ng-table="tableParams" template-pagination="custom/pager" class="table table-striped">
+            <tr ng-repeat="vm in $data" class="ng-cloak icon icon-refresh icon-spin">
+                <td data-title="'Name'" style="width:15%" header-class="text-left">
+                    <span ng-bind="vm.name"></span>
+                </td>
+                <td data-title="'Computer Name'" style="width:18%" header-class="text-left">
+                    {{vm.computerName}}
+                </td>
+                <td data-title="'Running Status'" style="text-align:right; width:12%" header-class="text-left">
+                    <div id="block_container">
+                        <div ng-if="vm.runningStatus=='POWERED_ON'" class="block">
+                            <div id="greenBox">&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                        </div>
+                        <div ng-if="vm.runningStatus=='POWERED_OFF'" class="block">
+                            <div id="redBox">&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                        </div>
+                        <div ng-if="vm.runningStatus=='SUSPENDED'" class="block">
+                            <div id="yellowBox">&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                        </div>
+                        <div class="block">{{runningStatus(vm.runningStatus)}}</div>
+                    </div>
+
+                </td>
+                <td data-title="'CPU'" style="width:5%; text-align:center">
+                    {{vm.cpu}}
+                </td>
+                <td data-title="'Memory'" style="width:10%; text-align:center">
+                    {{vm.memory}}
+                </td>
+                <td data-title="'Disk Name'" style="width:20%" header-class="text-left">
+                    <ul class="list-unstyled">
+                        <li ng-repeat="disk in vm.hardDisks">
+                            {{disk.diskName}}
+                        </li>
+                    </ul>
+                </td>
+                <td data-title="'Disk Size'" style="width:10%; text-align:center">
+                    <ul class="list-unstyled">
+                        <li ng-repeat="disk in vm.hardDisks">
+                            {{disk.diskSize}}
+                        </li>
+                    </ul>
+                </td>
+                <td data-title="'VLAN(s)'" style="text-align:center; width:10%">
+                    {{vm.networks.length}}
+                </td>
+
+                <!--            <td>
+                                {{vm.cpu_usage}}%
+                                <progressbar value="vm.cpu_usage" type={{getType(vm.cpu_usage)}}></progressbar>
+                            </td>-->
+            </tr>
+        </table>
+    </div>
+
+    <script type="text/ng-template" id="custom/pager">
+        <ul class="pager ng-cloak">
+            <li ng-repeat="page in pages"
+                ng-class="{'disabled': !page.active, 'previous': page.type == 'prev', 'next': page.type == 'next'}"
+                ng-show="page.type == 'prev' || page.type == 'next'" ng-switch="page.type">
+                <a ng-switch-when="prev" ng-click="params.page(page.number)" href="">&laquo; Previous</a>
+                <a ng-switch-when="next" ng-click="params.page(page.number)" href="">Next &raquo;</a>
+            </li>
+            <li>
+                <div class="btn-group">
+                    <button type="button" ng-class="{'active':params.count() == 10}" ng-click="params.count(10)"
+                            class="btn btn-default">10
+                    </button>
+                    <button type="button" ng-class="{'active':params.count() == 25}" ng-click="params.count(25)"
+                            class="btn btn-default">25
+                    </button>
+                    <button type="button" ng-class="{'active':params.count() == 50}" ng-click="params.count(50)"
+                            class="btn btn-default">50
+                    </button>
+                    <button type="button" ng-class="{'active':params.count() == 100}" ng-click="params.count(100)"
+                            class="btn btn-default">100
+                    </button>
+                </div>
+            </li>
+        </ul>
+    </script>
+</div>

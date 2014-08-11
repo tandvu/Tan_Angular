@@ -1,0 +1,36 @@
+[{
+    "name": "SubTaskWithLongName",
+    "status": {
+        "green": "8",
+        "blue": "0",
+        "yellow": "2",
+        "red": "2"
+    },
+    "subtasks": [{
+        "name": "LeafTask1",
+        "status": {
+            "green": "1",
+            "blue": "0",
+            "yellow": "1",
+            "red": "0"
+        }
+    }, {
+        "name": "LeafTask2",
+        "status": {
+            "green": "2",
+            "blue": "0",
+            "yellow": "1",
+            "red": "0"
+        }
+    }]
+}, {
+    "name": "Task2",
+    "status": {
+        "green": "5",
+        "blue": "3",
+        "yellow": "0",
+        "red": "2"
+    }
+}, {
+    "name": "Task3"
+}]

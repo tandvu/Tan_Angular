@@ -1,0 +1,15 @@
+[{
+    "name": "IceExercise2010",
+	"displayName": "Ice Exercise 2010",
+    "command": "SETAF",
+    "description": "Vigilant guard is a multi-agency, multi-state exercise focused on interagency coordination in preparation for emergencies or catastrophic events",
+    "poc": {
+        "name": "Sean Lee",
+        "email": "sean.lee@navy.spawar.mil<mailto:sean.lee@navy.spawar.mil>",
+        "phone": "619-324-0057"
+    },
+    "startTime": "07/14/2014",
+    "stopTime": "07/30/2015",
+    "filepath": "//my//path",
+    "time": "2010-07-14 14:22:50"
+}]

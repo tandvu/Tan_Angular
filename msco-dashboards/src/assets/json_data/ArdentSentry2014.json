@@ -1,0 +1,18 @@
+
+[
+    {
+        "_id": "53b494fd5fb8f9ce404234b7",
+        "name": "ArdentSentry2014",
+        "command": "FEMA",
+        "description": "Vigilant Guard is a multi-agency, multi-state exercise focused on interagency coordination in preparation for emergencies or catastrophic events.",
+        "poc": {
+        "name": "Michael Coen Jr.",
+        "email": "michael.coen@navy.spawar.mil",
+        "phone": "725-245-1120"
+        },
+        "startTime": "08/18/2014",
+        "stopTime": "08/30/2014",
+        "filepath": "/my/path",
+        "time": "2014-07-03 11:51:17"
+    }
+]

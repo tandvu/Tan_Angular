@@ -1,0 +1,13 @@
+<div class="modal-body" ng-controller="DownloadCtrl">
+  <div class="row">
+    <ul>
+      <li ng-repeat="fileListing in selectedMission.fileListings" >
+        <a target="_blank" href="{{fileListing.url}}" >{{fileListing.name}}</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="modal-footer">
+    <button type="button" class="btn btn-primary" ng-click="close()" >Close</button>
+  </div>
+</div>

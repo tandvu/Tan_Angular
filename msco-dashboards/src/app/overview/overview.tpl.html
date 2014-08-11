@@ -1,0 +1,126 @@
+
+<div id="overviewPg" class="container">
+
+<div class="row">
+        <h1 class="pageSubTitle">Overview</h1>
+
+    <div class="col-lg-9" style="min-height: 150px">
+        <h1>Description</h1>
+        <p class="lead">{{description}}</p>
+    </div>
+    <div class="col-lg-2" style="min-height: 150px">
+        <h1>POC</h1>
+        <font size="2">
+            {{poc.name}}
+        </font>
+        <br>
+        <font size="1">
+            {{poc.email}}<br>
+            {{poc.phone}}
+        </font>
+        <br>
+    </div>
+</div>
+  <!--<div>all: {{items}}</div>-->
+<div class="row">
+    <div class="col-lg-4" style="min-height: 300px">
+
+    <h2>Current Tasks</h2>
+    <div align="right">
+        {{activeTaskList.length}} TASKS
+        <a href ng-click="openCurrent()">
+        <i class="fa fa-info-circle fa-2x"></i>
+    </a>
+    </div>
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th> Name </th>
+                <th> Mission </th>
+                <th> Assignee </th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in activeTaskListFE">
+                    <td>
+                        {{item.name | characters:8 : true}}
+                    </td>
+                    <td>
+                        {{item.missionName | characters:8 : true}}
+                    </td>
+                    <td>
+                       {{item.user | characters:8 : true}}
+                    </td>
+                </tr>
+            </tbody>
+      </table>
+    </div>
+
+    <div class="col-lg-4" style="min-height: 300px">
+        <h2>Upcoming Tasks</h2>
+
+        <div align="right">
+            {{unstartedTaskList.length}} TASKS
+            <a href ng-click="openUpcoming()">
+                <i class="fa fa-info-circle fa-2x"></i>
+            </a>
+        </div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th> Name </th>
+                    <th> Mission </th>
+                    <th> Role </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in unstartedTaskListFE">
+                    <td>
+                        {{item.name | characters:8 : true}}
+                    </td>
+                    <td>
+                        {{item.missionName | characters:8 : true}}
+                    </td>
+                    <td>
+                        {{item.role | characters:8 : true}}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-lg-4">
+        <h2>Schedule</h2>
+        <div align="right"> {{completedTaskList.length}}/{{activeTaskList.length}}/{{unstartedTaskList.length}} (completed / active / planned)</div>
+        <canvas id="canvasBar" height="200px" width="300px" style="max-height: 200px; max-width: 300px"></canvas>
+    </div>
+</div>
+
+  <div class="row">
+      <div class="col-lg-5" align="center">
+          <h2>VM system status</h2>
+          <div align="right"> {{onVM}}/{{offVM}}/{{suspendedVM}}/{{totalVM}} (on / off / suspended / total)</div>
+          <canvas id="canvasPie" height="200" width="200" style="max-height: 200px; max-width: 200px"></canvas>
+      </div>
+
+
+		<div class="col-lg-5" style="min-height: 300px">
+          <h2>Major issues</h2>
+          <div align="right">
+              {{errors.length}} ISSUES
+              <a href ng-click="openIssues()">
+                  <i class="fa fa-info-circle fa-2x"></i>
+              </a>
+          </div>
+          <br>
+          <table class="table table-striped">
+              <tbody>
+              <tr ng-repeat="error in errorsShort">
+                  <td>
+                      {{error.message | characters:60 : true}}
+                  </td>
+              </tr>
+              </tbody>
+          </table>
+      </div>
+  </div>
+</div>

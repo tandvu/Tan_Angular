@@ -1,0 +1,17 @@
+<div ng-controller="TraineeCtrl" style="height:50%;">
+  <div class="navbar navbar-default">
+    <div class="collapse navbar-collapse" collapse="menuCollapsed">
+      <div class="row">
+        <div class="col-xs-9">
+          <!--<div class="btn-group">-->
+            <button class="btn btn-default" ng-repeat="mission in missions" ng-model="selectedMission.name" btn-radio="mission.name" ng-click="selectMission(mission)">{{mission.name}}</button>
+          <!--</div>-->
+        </div>
+        <div class="col-xs-3">
+          <div ng-include="exerciseInfoTemplate.url"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="remaining-space" ng-include="taskTemplate.url"></div>
+</div>

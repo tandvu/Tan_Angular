@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+  <bean id="pasComponent" class="org.restlet.ext.spring.SpringComponent">
+    <property name="defaultTarget" ref="pasApplication" />
+  </bean>
+
+  <bean id="pasApplication" class="mil.navy.spawar.msco.processautomationservice.rest.ProcessAutomationServiceRestApp" scope="singleton">
+    <property name="inboundRoot" ref="router" />
+  </bean>
+
+  <!--  Define the router -->
+  <bean name="router" class="org.restlet.ext.spring.SpringBeanRouter" />
+  
+  <!-- Define all the routes -->
+  <bean name="/status" class="mil.navy.spawar.msco.processautomationservice.rest.GetStatus" scope="prototype" autowire="byName" />
+  <bean name="/pausePolling" class="mil.navy.spawar.msco.processautomationservice.rest.PausePolling" scope="prototype" autowire="byName" />
+  <bean name="/setPollingRates" class="mil.navy.spawar.msco.processautomationservice.rest.SetPollingRates" scope="prototype" autowire="byName" />
+
+  <!--  Support @PostConstruct Annotation -->
+  <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor" />
+</beans>

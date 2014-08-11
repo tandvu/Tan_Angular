@@ -1,0 +1,81 @@
+<div id="summaryPg" class="container">
+    <div class="row">
+        <h2 class="subSubTitle">Summary - {{missionName}}</h2>
+        <small>
+            <a ui-sref="details({taskName:'all'})">(more details...)</a>
+        </small>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6" style="min-height: 300px">
+            <h3>Active Tasks</h3>
+            <table ng-table="activeTasksTbl" ng-cloak class="table table-striped">
+                <tr ng-repeat="task in $data">
+                    <td data-title="'Task Name'" sortable="'name'">
+                        <a ui-sref="details({taskName:'{{task.name}}'})">{{task.name}}</a>
+
+                    </td>
+                    <!--td data-title="'User'" sortable="'user'">
+                        {{task.user}}
+                    </td-->
+                    <td data-title="'Status'" sortable="'status'">
+                        {{task.state}}
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="col-lg-6" style="min-height: 300px">
+            <h3>Participants</h3>
+            <table ng-table="participantsTbl" ng-cloak class="table table-striped">
+                <tr ng-repeat="participant in $data">
+                    <td data-title="'Name'" sortable="'name'">
+                        {{participant.info.name}}
+                    </td>
+                    <td data-title="'Role'" sortable="'role'">
+                        {{participant.role}}
+                    </td>
+                    <td data-title="'Contact Info'">
+                        {{participant.info.email}}<br>
+                        {{participant.info.phone}}
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6" style="min-height: 300px">
+            <h3>Mission Metrics</h3>
+            <table ng-table="missionMetricsTbl" ng-cloak class="table table-striped">
+                <tr ng-repeat="metric in $data">
+                    <td data-title="'Metric Text'" sortable="'name'">
+                        {{metric.measureText}}
+                    </td>
+                    <td data-title="'Value'">
+                        <!--mets statuses="{{mission.status}}"></mets-->
+                        {{metric.value}}
+                    </td>
+                    <td>
+                        <info-popup title="{{mission.name}}" size="lg" data="{{missionMetrics}}" ng-controller="MopDetailsCtrl"></info-popup>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="col-lg-6" style="min-height: 300px">
+            <h3>Data Products</h3>
+            <table ng-table="missionProductsTbl" ng-cloak class="table table-striped">
+                <tr ng-repeat="product in $data">
+                    <td data-title="'Name'" sortable="'task'">
+                        {{product.name}}
+                    </td>
+                    <td data-title="'Path'">
+                        <a href>{{product.path}}</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

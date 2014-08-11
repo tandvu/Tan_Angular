@@ -1,0 +1,40 @@
+{
+  "unadded" : [
+    {
+      "processInstanceId": "53addb5b2a5c553411216c97",
+      "roleAssignmentId": "53adcf1b2a5c553411216c8f",
+      "userId": "53addf312a5c553411216c98"
+    },
+    {
+      "processInstanceId": "53addb5b2a5c553411216c96",
+      "roleAssignmentId": "53adcf332a5c553411216c90",
+      "userId": "53addf312a5c553411216c98"
+    },
+    {
+      "processInstanceId": "53addb5b2a5c553411216c95",
+      "roleAssignmentId": "53adcf422a5c553411216c91",
+      "userId": "53addf312a5c553411216c98"
+    }
+
+  ],
+  "DisasterRelief" : [{
+    "_id": "53adee302a5c553411216c9f",
+    "processInstanceId": "53addb5b2a5c553411216c97",
+    "roleAssignmentId": "53adcf1b2a5c553411216c8f",
+    "userId": "53addf312a5c553411216c98",
+    "time": "2014-06-27 15:20:32"
+  }, {
+    "_id": "53adee3c2a5c553411216ca0",
+    "processInstanceId": "53addb5b2a5c553411216c96",
+    "roleAssignmentId": "53adcf332a5c553411216c90",
+    "userId": "53addf312a5c553411216c98",
+    "time": "2014-06-27 15:20:44"
+  }, {
+    "_id": "53adee4c2a5c553411216ca1",
+    "processInstanceId": "53addb5b2a5c553411216c95",
+    "roleAssignmentId": "53adcf422a5c553411216c91",
+    "userId": "53addf312a5c553411216c98",
+    "time": "2014-06-27 15:21:00"
+  }]
+
+}

@@ -1,0 +1,57 @@
+{
+  "_collectiondata": [
+    {
+      "name": "Terrorism_JSAF",
+      "system_name": "JSAF",
+      "description": "JSAF Terrorism scenario",
+      "version": "4.6.0.4",
+      "unique_cloud_vm_id": "MSCO-Test<0xdelimit>msco-esxi3.sd.spawar.navy.mil<0xdelimit>Terrorism_JSAF",
+      "VLAN": "21",
+      "properties": "",
+      "deployment_status": "deployed",
+      "url": "http://msco-db.sd.spawar.navy.mil/nm.php/Terrorism-EX1/TrngEventVirtualSystems/1397768901548",
+      "time": "2014-04-17 14:08:21",
+      "cpu_usage" : "48"
+    },
+    {
+      "name": "Terrorism_GCCS-J",
+      "system_name": "GCCS-J",
+      "description": "GCCS Terrorism scenario",
+      "version": "4.3",
+      "unique_cloud_vm_id": "MSCO-Test<0xdelimit>msco-esxi4.sd.spawar.navy.mil<0xdelimit>Terrorism_GCCS-J",
+      "VLAN": "21",
+      "properties": "",
+      "deployment_status": "deployed",
+      "url": "http://msco-db.sd.spawar.navy.mil/nm.php/Terrorism-EX1/TrngEventVirtualSystems/1397768970814",
+      "time": "2014-04-17 14:09:30",
+      "cpu_usage" : "62"
+    },
+    {
+      "name": "Terrorism_GClient",
+      "system_name": "GCCS-J",
+      "description": "GCCS Terrorism scenario",
+      "version": "4.3",
+      "unique_cloud_vm_id": "MSCO-Test<0xdelimit>msco-esxi4.sd.spawar.navy.mil<0xdelimit>Terrorism_GClient",
+      "VLAN": "21",
+      "properties": "",
+      "deployment_status": "deployed",
+      "url": "http://msco-db.sd.spawar.navy.mil/nm.php/Terrorism-EX1/TrngEventVirtualSystems/1397769026675",
+      "time": "2014-04-17 14:10:26",
+      "cpu_usage" : "88"
+    },
+    {
+      "name": "Terrorism-EX1_JCATS",
+      "system_name": "JCATS",
+      "description": "Joint Conflict and Tactical Simulation",
+      "version": "12.1",
+      "unique_cloud_vm_id": "MSCO-DEMO<0xdelimit>msco-esxi3.sd.spawar.navy.mil<0xdelimit>Terrorism-EX1_JCATS",
+      "VLAN": "21",
+      "template_uri": "C:\\OVFs\\MSCO-JCATS.ovf",
+      "properties": "",
+      "deployment_status": "deployed",
+      "url": "http://msco-db.sd.spawar.navy.mil/nm.php/Terrorism-EX1/TrngEventVirtualSystems/1401381459538",
+      "time": "2014-05-29 09:49:30",
+      "cpu_usage" : "97"
+    }
+  ]
+}

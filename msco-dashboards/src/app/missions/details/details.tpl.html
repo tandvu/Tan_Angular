@@ -1,0 +1,87 @@
+<div id="processDetailsPg" class="container">
+    <h1 class="pageSubTitle">Mission Details</h1>
+
+    <div class="col-md-2 sidebar-offcanvas" id="sidebar">
+        <abn-tree id="tasksTree" tree-control="treeControl" tree-data="tasks" icon-leaf="" on-select="treeHandler(branch)"></abn-tree>
+    </div>
+
+    <div id="detailsTables" class="col-md-10">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Participants</h3>
+                <table ng-table="participantsTbl" ng-cloak class="table table-striped">
+                    <tr ng-repeat="participant in $data">
+                        <td data-title="'Name'" sortable="'name'">
+                            {{participant.info.name}}
+                        </td>
+                        <td data-title="'Role'" sortable="'role'">
+                            {{participant.role}}
+                        </td>
+                        <td data-title="'Contact Info'">
+                            {{participant.info.email}}<br>
+                            {{participant.info.phone}}
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="col-md-6">
+                <h3>Data Products</h3>
+                <table ng-table="dataProductsTbl" class="table table-striped">
+                    <tr ng-repeat="product in $data">
+                        <td data-title="'Name'" sortable="'task'">
+                            {{product.name}}
+                        </td>
+                        <td data-title="'Path'">
+                            <a href>
+                                {{product.path}}
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Task Metrics</h3>
+                <table ng-table="taskMetricsTbl" class="table table-striped">
+                    <tr ng-repeat="metric in $data">
+                        <td data-title="'Metric Text'" sortable="'name'">
+                            {{metric.measureText}}
+                        </td>
+                        <td data-title="'Value'">
+                            <!--mets statuses="{{mission.status}}"></mets-->
+                            {{metric.value}}
+                        </td>
+                        <td>
+                            <info-popup title="{{mission.name}}" ng-controller="MopDetailsCtrl"></info-popup>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="col-md-6">
+                <h3>Time</h3>
+                <table id="timeTable" class="ng-table table table-striped">
+                    <thead></thead>
+                    <tbody>
+                        <tr>
+                            <td>Start</td>
+                            <td>{{time.start}}</td>
+                        </tr>
+                        <!--tr>
+                            <td>Remaining</td>
+                            <td>{{time.remaining}}</td>
+                        </tr-->
+                        <!--tr>
+                            <td>Projected</td>
+                            <td>{{time.projected}}</td>
+                        </tr-->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,203 @@
+[
+    {
+        "_id": "53b4959a5fb8f9ce404234b9",
+        "name": "LionStrike",
+        "command": "SETAF",
+        "description": "A military exercise of the US and Bulgarian Forces",
+        "poc": {
+            "name": "Michael Taylor",
+            "email": "michael.taylor@navy.spawar.mil",
+            "phone": "619-564-8657"
+        },
+        "startTime": "05/28/2014",
+        "stopTime": "07/30/2014",
+        "filepath": "/my/path",
+        "time": "2014-07-02 19:28:26"
+    },
+    {
+        "_id": "53b4960f5fb8f9ce404234bb",
+        "name": "CobraGold2014",
+        "command": "SETAF",
+        "description": "A military exercise of the US and Thai Forces",
+        "poc": {
+            "name": "Sean Lee",
+            "email": "sean.lee@navy.spawar.mil",
+            "phone": "619-324-0057"
+        },
+        "startTime": "07/02/2014",
+        "stopTime": "07/30/2014",
+        "filepath": "/my/path",
+        "time": "2014-07-02 19:30:23"
+    },
+    {
+        "_id": "53b496c45fb8f9ce404234bd",
+        "name": "IronFist2014",
+        "command": "FOIA",
+        "description": "A military exercise of the US and Japanese Forces off San Diego coast",
+        "poc": {
+            "name": "Marco Walter",
+            "email": "marco.walter@navy.spawar.mil",
+            "phone": "619-632-1266"
+        },
+        "startTime": "07/02/2014",
+        "stopTime": "08/08/2014",
+        "filepath": "/my/path",
+        "time": "2014-07-02 19:33:24"
+    },
+    {
+        "_id": "53b497d85fb8f9ce404234bf",
+        "name": "DesertRescue",
+        "command": "USSCOM",
+        "description": "An exercise to simulate Combat Search and Rescue missions of downed pilots",
+        "poc": {
+            "name": "Matthew Douglash",
+            "email": "matthew.douglash@socom.mil",
+            "phone": "206-235-5500"
+        },
+        "startTime": "07/02/2014",
+        "stopTime": "09/12/2014",
+        "filepath": "/my/path",
+        "time": "2014-07-02 19:38:00"
+    },
+    {
+        "_id": "53b49a3c5fb8f9ce404234c1",
+        "name": "RIMPAC2014",
+        "command": "USPACOM",
+        "description": "Rim of the Pacific Exercise",
+        "poc": {
+            "name": "Sammuel J. Locklear III",
+            "email": "sammuel.locklear@uspacom.mil",
+            "phone": "252-788-5500"
+        },
+        "startTime": "07/10/2014",
+        "stopTime": "08/12/2014",
+        "filepath": "/my/path",
+        "time": "2014-07-02 19:48:12"
+    },
+    {
+        "_id": "53b494fd5fb8f9ce404234b7",
+        "name": "ArdentSentry2014",
+        "command": "FEMA",
+        "description": "Vigilant Guard is a multi-agency, multi-state exercise focused on interagency coordination in preparation for emergencies or catastrophic events.",
+        "poc": {
+            "name": "Michael Coen Jr.",
+            "email": "michael.coen@navy.spawar.mil",
+            "phone": "725-245-1120"
+        },
+        "startTime": "08/18/2014",
+        "stopTime": "08/30/2014",
+        "filepath": "/my/path",
+        "time": "2014-07-03 11:51:17"
+    },
+    {
+        "_id": "53b57d395fb8f9ce404234c6",
+        "name": "TridentWarrior2011",
+        "command": "USFF",
+        "description": "An exercise is designed to test mature emerging technologies, tactics, techniques and procedures.",
+        "poc": {
+            "name": "Bill gortney",
+            "email": "bill.gortney@cffc.navy.mil",
+            "phone": "356-542-2701"
+        },
+        "startTime": "08/04/2014",
+        "stopTime": "08/22/2014",
+        "filepath": "/my/path",
+        "time": "2014-07-03 11:56:41"
+    },
+    {
+        "_id": "53b57deb5fb8f9ce404234c8",
+        "name": "SummerPulse2014",
+        "command": "USFF",
+        "description": "a worldwide multi-carrier surge deployment that served as the United States Navy's first full-scale test of its then-new Fleet Response Plan (FRP).",
+        "poc": {
+            "name": "Bill gortney",
+            "email": "bill.gortney@cffc.navy.mil",
+            "phone": "252-236-8201"
+        },
+        "startTime": "07/04/2014",
+        "stopTime": "08/11/2014",
+        "filepath": "/my/path",
+        "time": "2014-07-03 11:59:39"
+    },
+    {
+        "_id": "53b57f205fb8f9ce404234ca",
+        "name": "CopeTiger2014",
+        "command": "PACAF",
+        "description": "An annual, multilateral, aerial large force exercise conducted in the Asia-Pacific region.",
+        "poc": {
+            "name": "Steve McDonald",
+            "email": "steve.mcdonald@pacaf.mil",
+            "phone": "410-202-5589"
+        },
+        "startTime": "08/04/2014",
+        "stopTime": "10/11/2014",
+        "filepath": "/my/path",
+        "time": "2014-07-03 12:04:48"
+    },
+    {
+        "_id": "53b580935fb8f9ce404234cc",
+        "name": "NobleDina2014",
+        "command": "NAVEUR_NAVAF",
+        "description": "A combined exercise designed to increase interoperability by developing individual and collective maritime proficiencies of participating nations, as well as promoting friendship, mutual understanding and cooperation.",
+        "poc": {
+            "name": "JoAnn Ortloff",
+            "email": "joann.ortloff@naveur_navaf.mil",
+            "phone": "523-253-8022"
+        },
+        "startTime": "06/17/2014",
+        "stopTime": "09/05/2014",
+        "filepath": "/my/path",
+        "time": "2014-07-03 12:10:59"
+    },
+    {
+        "_id": "53b581485fb8f9ce404234ce",
+        "name": "IceExercise2009",
+        "command": "USFLTFORCOM",
+        "description": "A two-week US naval military exercise that took place in March 2009.[1][2] Its aim was to test submarine operability and war-fighting capability in Arctic conditions.",
+        "poc": {
+            "name": "William E. Gortney",
+            "email": "william.e.gortney@usfltforcom.mil",
+            "phone": "405-754-9919"
+        },
+        "startTime": "08/17/2014",
+        "stopTime": "09/05/2014",
+        "filepath": "/my/path",
+        "time": "2014-07-03 12:14:00"
+    },
+    {
+        "_id": "53b494fd5fb8f9ce404234b7",
+        "name": "ValiantShield2014",
+        "command": "PACOM",
+        "description": "Valiant Shield exercise in 2014",
+        "poc": {
+            "name": "John Smith",
+            "email": "john.smith@navy.spawar.mil",
+            "phone": "619-255-2356"
+        },
+        "startTime": "05/18/2014",
+        "stopTime": "05/30/2014",
+        "filepath": "/my/path",
+        "time": "2014-07-07 16:40:43",
+        "vmWorkingStatus": {
+            "status": "Completed",
+            "currentStage": "5",
+            "endStage": "6",
+            "percentComplete": " "
+        }
+    },
+    {
+        "_id": "53b5f08cfd6242685d6278bd",
+        "name": "IceExercise2010",
+        "command": "USFLTFORCOM",
+        "description": "A two-week US naval military exercise that took place in March 2009.[1][2] Its aim was to test submarine operability and war-fighting capability in Arctic conditions.",
+        "poc": {
+            "name": "William E. Gortney",
+            "email": "william.e.gortney@usfltforcom.mil",
+            "phone": "405-754-9919"
+        },
+        "startTime": "08/17/2014",
+        "stopTime": "09/05/2014",
+        "filepath": "/my/path",
+        "time": "2014-07-03 20:08:44"
+    }
+]

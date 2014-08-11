@@ -1,0 +1,21 @@
+{
+  "name": "ng-boilerplate",
+  "version": "0.3.2",
+  "devDependencies": {
+    "angular": "~1.2",
+    "angular-mocks": "~1.2",
+    "bootstrap": "~3.1",
+    "angular-bootstrap": "~0.10.0",
+    "angular-ui-router": "~0.2",
+    "angular-resource": "~1.2.19",
+    "angular-spinner": "~0.5.0"
+  },
+  "dependencies": {
+    "Chart.js": "*",
+    "ng-table": "~0.3.3",
+    "angular-animate": "~1.2.18",
+    "OwlCarousel": "~1.3.2",
+    "angularjs-truncate": "*",
+    "angular-busy": "~4.1.0"
+  }
+}

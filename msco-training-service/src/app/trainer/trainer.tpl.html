@@ -1,0 +1,67 @@
+<div ng-controller="TrainerCtrl">
+  <div class="navbar navbar-default">
+    <div class="row">
+      <div class="col-xs-9">
+        <table>
+          <!--  Trainer controls: select Overview, Missions, or Systems views  -->
+          <tr style="margin-bottom:2px;"><td colspan="{{missions.length}}">
+            <div class="btn-group">
+              <button class="btn btn-primary" ng-repeat="o in trainerTemplates" ng-model="selectedTrainerOption" btn-radio="o.name" ng-click="selectTrainerOption(o.name)">{{o.name}}</button>
+            </div>
+          </td></tr>
+          <!--  Mission controls:  -->
+          <tr>
+            <!--<div class="btn-group">-->
+              <td ng-repeat="mission in missions" >
+                <table cellspacing="1px" cellpadding="1px">
+                  <tr>
+                    <td colspan="2"><button class="btn btn-default" ng-model="selectedMission.name" btn-radio="mission.name" ng-click="selectMission(mission)">{{mission.name}}</button></td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left"><div class="small" ng-show="selectedMission.name===mission.name" title="{{((!!mission.processInstance&&!!mission.processInstance.startTime?(mission.processInstance.startTime+' - '):'')+(!!mission.processInstance&&!!mission.processInstance.stopTime?mission.processInstance.stopTime:''))}}">
+                        {{ ((!!mission.processInstance&&!!mission.processInstance.startTime?(mission.processInstance.startTime+' - '):'')+(!!mission.processInstance&&!!mission.processInstance.stopTime?mission.processInstance.stopTime:''))|characters:mission.name.length }}
+                    </div></td>
+                    <td style="text-align: right">
+                      <div ng-switch="selectedMission.name===mission.name">
+                        <div ng-switch-when="true">
+
+                          <div ng-switch="getMissionPlaybackState(mission)">
+                            <div ng-switch-when="unstarted">
+                              <a class="btn btn-xs btn-link" ng-click="startMission(mission)" title="Start {{mission.name}}"><span class="glyphicon glyphicon-play"></span></a>
+                            </div>
+                            <div ng-switch-when="started">
+                              <a class="btn btn-xs btn-link" ng-click="stopMission(mission)" title="Stop {{mission.name}}"><span class="glyphicon glyphicon-stop"></span></a>
+                            </div>
+                            <div ng-switch-when="complete">
+                              <a class="btn btn-xs btn-link" ng-click="repeatMission(mission)" title="Repeat {{mission.name}}"><span class="glyphicon glyphicon-repeat"></span></a>
+                            </div>
+                            <div ng-switch-default="none" style="padding:1px;">
+                              <span class="glyphicon glyphicon-none" ></span>
+                            </div>
+                          </div>
+                        </div>
+                        <div ng-switch-default="false" style="padding:1px;">
+                          <span class="glyphicon glyphicon-none" ></span>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            <!--</div>-->
+          </tr>
+        </table>
+
+      </div>
+      <div class="col-xs-3">
+        <div ng-include="exerciseInfoTemplate.url"></div>
+      </div>
+    </div>
+  </div>
+  <!--  included main views  -->
+  <div ng-switch="selectedTrainerOption">
+    <div ng-switch-when="Overview"><div class="remaining-space" ng-include="trainerTemplates[0].url"></div></div>
+    <div ng-switch-when="Missions"><div class="remaining-space" ng-include="trainerTemplates[1].url"></div></div>
+    <div ng-switch-when="Systems"><div class="remaining-space" ng-include="trainerTemplates[2].url"></div></div>
+  </div>
+</div>

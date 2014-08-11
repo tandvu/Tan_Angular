@@ -1,0 +1,20 @@
+[{
+    "name": "Jane Doe",
+    "role": "Trainee",
+    "contact_info": {
+        "email": "jane.doe@navy.mil",
+        "phone": "555-555-5555"
+    }}, {
+    "name": "John Smith",
+    "role": "Role-Player",
+    "contact_info": {
+        "email": "john.smith@navy.mil",
+        "phone": "555-555-5554"
+    }}, {
+    "name": "Chris Thompson",
+    "role": "Trainer",
+    "contact_info": {
+        "email": "chris.thompson@navy.mil",
+        "phone": "555-555-5553"
+    }}
+]

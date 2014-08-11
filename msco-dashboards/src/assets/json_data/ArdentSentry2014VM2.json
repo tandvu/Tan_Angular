@@ -1,0 +1,38 @@
+[
+    {
+        "_id": "53bb31702de0ea5c3d6ecf3b",
+        "name": "VM1",
+        "computerName": "ComputerName",
+        "systemName": "System Name1",
+        "templateName": "Template Name1",
+        "deploymentStatus": "DEPLOYED",
+        "workingStatus": {
+            "status": "Running"
+        },
+        "time": "2014-07-07 19:46:56"
+    },
+    {
+        "_id": "53bb31702de0ea5c3d6ecf3b",
+        "name": "VM1",
+        "computerName": "ComputerName",
+        "systemName": "System Name1",
+        "templateName": "Template Name1",
+        "deploymentStatus": "DEPLOYED",
+        "workingStatus": {
+            "status": "Running"
+        },
+        "time": "2014-07-07 19:46:56"
+    },
+    {
+        "_id": "53bb31702de0ea5c3d6ecf3b",
+        "name": "VM1",
+        "computerName": "ComputerName",
+        "systemName": "System Name1",
+        "templateName": "Template Name1",
+        "deploymentStatus": "DEPLOYED",
+        "workingStatus": {
+            "status": "Down"
+        },
+        "time": "2014-07-07 19:46:56"
+    }
+]

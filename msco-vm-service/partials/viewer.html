@@ -1,0 +1,34 @@
+<!--div class="page-title-no-links">
+	<div class="page-title-text-half-screen">
+		<div>Virtualization Viewer</div>
+	</div>
+</div>
+<div class="body-div-half-screen"-->
+
+<div class="page-title">
+	<div class="page-title-text-half-screen">
+		<div>Virtualization Viewer</div>
+		<div style="margin-left: 300px; font-size: 18px; margin-top: 15px">
+			<a class="page-title-link" style="margin-left: 90px" href="#/viewer">Exercise VMs</a>
+			<!--a class="page-title-link" href="#/viewer">Exercise VMs</a-->
+			<!--a class="page-title-link" style="margin-left: 20px" href="#/viewer">My VMs</a-->
+		</div>
+	</div>
+</div>
+
+<div class="body-div-half-screen">
+	<div>
+		<div style="margin-top: 20px; margin-left: 110px">
+			<div style="float: left; margin-top: 5px; margin-right: 5px">Exercise:</div>
+			<!--select name="exerciseSelect" style="margin-left: 20px">
+ 				<option value="DisasterRelief-EX1">DisasterRelief-EX1</option>
+ 			</select-->
+ 			<select ng-model="trainingEvent" ng-options="trainingEvent.name for trainingEvent in trainingEvents" ng-change="requeryVMs()"></select>
+ 		</div>
+    	<div id="availableSystemTemplates" style="width: 500px; float: left;" >
+        	<div class="title-center">Exercise Virtual Machines<img src="img/reload.jpg" ng-click="requeryVMs()" style="margin-left: 15px; width:20px"/></div>
+        		<div class="gridStyle" ng-grid="vmGridOptions"></div>
+        	</div>
+		</div>	
+	</div>
+</div>

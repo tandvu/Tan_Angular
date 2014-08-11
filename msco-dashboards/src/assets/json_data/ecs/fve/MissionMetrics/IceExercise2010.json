@@ -1,0 +1,18 @@
+{
+    "metId": "53ad7a512ec778e13ce6ed58",
+    "missionId": "53ad7a512ec778e13ce6ed58",
+    "metrics": [
+        {
+            "number": "M1",
+            "measureText": "Measure 1 text",
+            "value": "measure 1 value",
+            "comment": "comment 1"
+        },
+        {
+            "number": "M2",
+            "measureText": "Measure 2 text",
+            "value": "measure 2 value",
+            "comment": "comment 2"
+        }
+    ]
+}

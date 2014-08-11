@@ -1,0 +1,58 @@
+{ "unadded": [
+  {
+    "ldapId": "jcrossley",
+    "info": {
+      "name": "Jesse Crossley",
+      "email": "jesse.crossley@gmail.com",
+      "phone": "858-874-1847"
+    },
+    "role": "Trainer",
+    "isPoc": true,
+    "group": "Planner"
+  },
+  {
+    "ldapId": "ttrainer",
+    "info": {
+      "name": "Tim Trainer",
+      "email": "tim@trainer.com",
+      "phone": "555-555-1234"
+    },
+    "role": "Trainer",
+    "isPoc": false,
+    "group": "Trainer"
+  },
+  {
+    "ldapId": "ttrainee",
+    "info": {
+      "name": "Tony Trainee",
+      "email": "tony@trainee.com",
+      "phone": "555-555-4321"
+    },
+    "role": "Trainee",
+    "isPoc": false,
+    "group": "Trainee"
+  },
+  {
+    "ldapId": "taniatrainee",
+    "info": {
+        "name": "Tania Trainee",
+        "email": "tania@trainee.com",
+        "phone": "555-555-4213"
+    },
+    "role": "Trainee",
+    "isPoc": false,
+    "group": "Trainee"
+  },
+  {
+    "ldapId": "jladner",
+    "info": {
+      "name": "Jared Ladner",
+      "email": "jared.ladner@geoent.com",
+      "phone": "228-688-1265"
+    },
+    "role": "Sim",
+    "isPoc": true,
+    "group": "Modeller"
+  }
+]
+}

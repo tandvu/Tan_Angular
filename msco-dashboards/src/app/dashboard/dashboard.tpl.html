@@ -1,0 +1,31 @@
+<div class="navbar">
+    <ui-breadcrumbs displayname-property="data.displayName" abstract-proxy-property="data.proxy"></ui-breadcrumbs>
+</div>
+
+<div class="container">
+    <div class="row">
+        <ul class="nav nav-pills navbar-nav pull-right">
+            <li ng-class="{active: $state.is('overview')}">
+                <a ui-sref="overview()">
+                    OVERVIEW
+                </a>
+            </li>
+            <li ng-class="{active: $state.includes('missions')}">
+                <a ui-sref="missions()">
+                    MISSIONS
+                </a>
+            </li>
+            <li ng-class="{active: $state.is('vmInfo')}">
+                <a ui-sref="vmInfo()">
+                    SYSTEMS
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <hr>
+</div>
+
+<div id="dashboardPg">
+    <div ui-view="dashboard"></div>
+</div>

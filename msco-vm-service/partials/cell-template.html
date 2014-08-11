@@ -1,0 +1,4 @@
+<img ng-click="startVM(row.entity.id)" ng-class="(row.entity.running_status=='POWERED_OFF') ? 'displayRow' : 'nondisplayRow'" style="margin-left: 2px; margin-top:2px" src="/img/StartVM6.png">
+<img ng-click="suspendVM(row.entity.id)" ng-class="(row.entity.running_status=='POWERED_ON') ? 'displayRow' : 'nondisplayRow'" style="margin-left: 2px; margin-top:2px" src="/img/StopVM.png">
+<img ng-click="stopVM(row.entity.id)" ng-class="(row.entity.running_status=='POWERED_ON') ? 'displayRow' : 'nondisplayRow'" style="margin-left: 2px; margin-top:2px" src="/img/StopVM2.png">
+<img ng-click="openConsole(row.entity.name)" ng-class="(row.entity.running_status=='POWERED_ON') ? 'displayRow' : 'nondisplayRow'" style="margin-left: 2px; margin-top:2px" src="/img/OpenConsole.png">

@@ -1,0 +1,42 @@
+{
+  "_configurationdata": {
+
+    "fmsUrl":"/fms/fms",
+    "fmsUsername" : "fmsUser",
+    "fmsPassword" : "fmsPass",
+    "downloadPath":"/Execution/",
+    "uploadPath":"/Upload?",
+
+    "vmAdminUrl":"/vm/#/exerciseListManager/",
+    "dashboardOverviewUrl":"/dbs/#/dashboard/:exerciseName/overview",
+    "dashboardSystemsUrl":"/dbs/#/dashboard/:exerciseName/overview/vmInfo",
+
+    "ecsUrl":"/ecs",
+    "ecsExercisesPath":"/Exercises",
+
+    "fveUrl":"/ecs/fve",
+    "fveMissionsPath":"/Missions/",
+    "fveMetsPath":"/Mets/",
+    "fveMissionProductsPath":"/MissionProducts/",
+    "fveMissionMetricsPath":"/MissionMetrics/",
+    "fveRoleAssignmentsPath":"/RoleAssignments/",
+    "fveUsersPath":"/Users/",
+    "fveProcessInstancesPath":"/ProcessInstances/",
+    "fveInstanceRolesPath":"/InstanceRoles/",
+    "fveInstanceTasksPath":"/InstanceTasks/",
+    "fveInstanceVariablesPath":"/InstanceVariables/",
+    "fveStartMissionPath":"/StartMission/",
+    "fveStopMissionPath":"/StopMission/",
+    "fveUnstartedTasksPath":"/UnstartedTasks/",
+    "fveStartTaskPath":"/StartTask/",
+    "fveCompleteTaskPath":"/CompleteTask/",
+    "fveTaskFormPath":"/TaskForm/",
+
+    "jbpmUrl" : "/jbpm-console",
+    "jbpmRestDeploymentPath": "/rest/deployment",
+    "jbpmUsername" : "MSCO_ECS_User",
+    "jbpmPassword" : "MSCO_ECS_User",
+
+    "ecsUpdateInterval":15000
+  }
+}

@@ -1,0 +1,72 @@
+doctype html
+html(lang="en" ng-app="dashboardApp")
+  head
+    title Generic Database Access Layer - Management Utility
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+    link(rel="stylesheet", href="/lib/bootstrap/css/bootstrap.min.css")
+    link(rel="stylesheet", href="/stylesheets/style.css")
+        
+    script(src="/lib/jquery/jquery-1.11.0.min.js")
+    script(src="/lib/bootstrap/js/bootstrap.min.js")
+    script(src="/lib/angularjs/angular.min.js")
+    script(src="/javascripts/angular-listbox-select.js")
+    script(src="/javascripts/dashboard.js")
+
+body(role="document" ng-controller="ManagePermissionsController")
+    div(class="container")
+        div.page-header
+            h1 Generic Database Access Layer &nbsp;
+                small Management Utility
+
+        div.row(class="panel panel-default")
+            div.panel-heading Consumer Management
+            div.panel-body
+
+                div(class="col-xs-12 col-sm-12 col-md-12 col-lg-12")
+                    div.form-group
+                        label Select Consumer
+                        select(class="form-control" ng-model="selectedConsumer" ng-options="consumer.identifier for consumer in consumers track by consumer._id")
+                    
+                    div.form-group(ng-hide="!selectedConsumer")
+                        label Assign Consumer Roles
+                        div(class="col-xs-12 col-sm-12 col-md-12 col-lg-12")
+                            selectable-list(list-items="selectableConsumerRoles" items-header="'Available Roles'" list-results="selectedConsumerRoles" results-header="'Assigned Roles'")
+                    
+                    div.form-group
+                        label New Consumer
+                        div.input-group
+                            input(type="text" class="form-control" ng-model="newConsumer" placeholder="New Consumer Identifier" data-toggle="tooltip" title="Test")
+                            span.input-group-btn
+                                button(type="button" class="btn btn-default" ng-click="addConsumer(newConsumer)" ng-disabled="!newConsumer")
+                                    span(class="glyphicon glyphicon-plus-sign")
+
+
+        div.row(class="panel panel-default")
+            div.panel-heading Role Management
+            div.panel-body
+                div(class="col-xs-12 col-sm-12 col-md-12 col-lg-12")
+                    div.form-group
+                        label Select Role
+                        select(class="form-control" ng-model="selectedRole" ng-options="role.name for role in roles track by role._id")
+
+                div(ng-hide="!selectedRole")
+                    div(class="col-xs-6 col-sm-6 col-md-6 col-lg-6")
+                        div.form-group
+                            label Role Database
+                            select(class="form-control" ng-model="selectedDatabase" ng-options="database for database in databases")
+                    div(class="col-xs-6 col-sm-6 col-md-6 col-lg-6")
+                        div.form-group
+                            label Access Permission
+                            select(class="form-control" ng-model="selectedDatabaseAccess" ng-options="access for access in access" ng-disabled="!selectedDatabase" ng-change="updateDatabaseAccess(selectedDatabaseAccess)")
+                                option(value="") None
+
+                div(class="col-xs-12 col-sm-12 col-md-12 col-lg-12")
+                    div.form-group
+                        label New Consumer
+                        div.input-group
+                            input(type="text" class="form-control" ng-model="newRole" placeholder="New Role Name")
+                            span.input-group-btn
+                                button(type="button" class="btn btn-default" ng-click="addRole(newRole)" ng-disabled="!newRole")
+                                    span(class="glyphicon glyphicon-plus-sign")
+

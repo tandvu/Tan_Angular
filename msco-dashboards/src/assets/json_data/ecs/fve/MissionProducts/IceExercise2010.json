@@ -1,0 +1,12 @@
+[{
+    "_id":"1",
+    "missionId": "53ad7a512ec778e13ce6ed58",
+    "name": "my work product 2",
+    "description": "my work product 2",
+    "role": "Model",
+    "taskName": "task2",
+    "inputOutput": "input",
+    "assignment": "Simulated Role",
+    "path": "my/path",
+	"filename": "test.docx"
+}]

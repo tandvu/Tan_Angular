@@ -1,0 +1,47 @@
+<div>
+  <h3>Metrics</h3>
+  <accordion close-others="true" ng-style="metrics-accordion">
+    <!--<accordion-group ng-show="selectedMissionOption==='Summary'">
+      <accordion-heading>
+        <table style="width:100%;">
+          <tr>
+            <td style="text-align: left;">Summary</td>
+            &lt;!&ndash;<td style="text-align: right; vertical-align: middle;">
+              <div ng-include="measuresTemplate.url"></div>&lt;!&ndash;  <missionAggregateMetric metrics="{{selectedMission.metrics}}"></missionAggregateMetric  &ndash;&gt;
+            </td>&ndash;&gt;
+          </tr>
+        </table>
+      </accordion-heading>
+    </accordion-group>-->
+    <accordion-group ng-repeat="metric in selectedMission.metrics">
+      <accordion-heading>
+        <table style="width:100%;">
+          <tr>
+            <td style="text-align: left;">{{metric.met.number}}  {{metric.met.name}}</td>
+            <!--<td style="text-align: right; vertical-align: middle;">
+              <div ng-include="measuresTemplate.url"></div>&lt;!&ndash;  <missionMetAggregate met="{{metric.met}}"></missionMetAggregate>  &ndash;&gt;
+            </td>-->
+          </tr>
+        </table>
+      </accordion-heading>
+      {{metric.met.description}}
+      <accordion close-others="true" ng-class="metrics-accordion">
+        <accordion-group ng-repeat="measure in metric.met.measures">
+          <accordion-heading>
+            <table style="width:100%;">
+              <tr>
+                <td style="text-align: left;">{{measure.number}}</td>
+                <!--<td style="text-align: right; vertical-align: middle;">
+                  <div ng-include="measuresTemplate.url"></div>&lt;!&ndash;  <missionMeasureMetric measure="{{measure}}" metric="{{metric}}"></missionMeasureMetric>  &ndash;&gt;
+                </td>-->
+              </tr>
+            </table>
+          </accordion-heading>
+          {{measure.measureText}}
+          <textarea id="" rows="2" style="width:100%;" >Enter Comment...</textarea>
+        </accordion-group>
+      </accordion>
+
+    </accordion-group>
+  </accordion>
+</div>

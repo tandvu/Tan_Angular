@@ -1,0 +1,14 @@
+[
+    {
+        "message": "There is a failed error that was caused by bad user input from either user1 or user2 in this exercise.",
+        "_id": "53b5fb14fd6242685d6278c1",
+        "time": "2014-07-03 20:53:40",
+        "level": "ERROR"
+    },
+    {
+        "message": "User1 has crashed the system for a second time.",
+        "_id": "53b5fb14fd6242685d6278c1",
+        "time": "2014-07-03 20:53:40",
+        "level": "ERROR"
+    }
+]

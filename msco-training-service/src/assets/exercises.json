@@ -1,0 +1,98 @@
+[
+  {
+    "name":"DisasterRelief",
+    "command":"SSCPAC",
+    "description":"DisasterRelief exercise in Gulf",
+    "poc": {
+      "name": "Mr. John Doe",
+      "email": "john@doe.com",
+      "phone": "555-555-1234"
+    },
+    "startTime":"7/1/2014",
+    "stopTime":"7/31/2014",
+    "vmWorkingStatus":{
+      "status":"Started",
+      "currentStage":"1",
+      "endStage":"10",
+      "percentComplete":"10",
+      "statusDescription":"building"
+    },
+    "filepath":"/dr/gulf/path"
+  },
+  {
+    "name":"ExerciseTemplate",
+    "command":"TBD",
+    "description":"Empty exercise template",
+    "poc": {
+      "name": "Mr. Tom Swift",
+      "email": "tom@swift.com",
+      "phone": "555-555-2222"
+    },
+    "vmWorkingStatus":{
+      "status":"Placeholder",
+      "currentStage":"0",
+      "endStage":"0",
+      "percentComplete":"0",
+      "statusDescription":"instantiated"
+    },
+    "filepath":"/et/false/path"
+  },
+  {
+    "name":"PersonnelRecovery",
+    "command":"SSCPAC",
+    "description":"PersonnelRecovery exercise in Gulf",
+    "poc": {
+      "name": "Ms. Jane Doe",
+      "email": "jane@doe.com",
+      "phone": "555-555-9876"
+    },
+    "startTime":"7/1/2014",
+    "stopTime":"7/31/2014",
+    "vmWorkingStatus":{
+      "status":"In Process",
+      "currentStage":"4",
+      "endStage":"8",
+      "percentComplete":"50",
+      "statusDescription":"running"
+    },
+    "filepath":"/pr/gulf/path"
+  },
+  {
+    "name":"PastExercise",
+    "command":"SSCPAC",
+    "description":"This exercise has already happened",
+    "poc": {
+        "name": "Dr. Who",
+        "email": "doctor@who.com",
+        "phone": "555-566-6447"
+    },
+    "startTime":"6/11/2014",
+    "stopTime":"6/29/2014",
+    "vmWorkingStatus":{
+        "status":"Complete",
+        "currentStage":"42",
+        "endStage":"42",
+        "percentComplete":"100",
+        "statusDescription":"Completed Exercise"
+    },
+    "filepath":"/pe/complete/path"
+  },
+  {
+    "name":"TRAPExercise",
+    "command":"MSCO",
+    "description":"TRAP exercise for downed aircraft",
+    "poc": {
+      "name": "Mr. Sam Eagle",
+      "email": "sam@muppets.com",
+      "phone": "555-555-2222"
+    },
+    "vmWorkingStatus":{
+      "status":"In Progress",
+      "currentStage":"1",
+      "endStage":"42",
+      "percentComplete":"2",
+      "statusDescription":"description of vm working status"
+    },
+    "filepath":"/te/false/path"
+  }
+]

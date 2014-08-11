@@ -1,0 +1,22 @@
+{
+  "mongoDBService" : {
+     "mongoDBServiceProto" : "http",
+     "mongoDBServiceAddr" : "localhost",
+     "mongoDBServicePort" : "8082",
+     "mongoDBServiceApp" : ""
+   },
+  "jBPMService" : {
+     "jBPMServiceProto" : "http",
+     "jBPMServiceAddr" : "localhost",
+     "jBPMServiceURI" : "/jbpm-console",
+     "jBPMServicePort" : "8080",
+     "jBPMUsername" : "salaboy",
+     "jBPMPassword" : "salaboy"
+   }, 
+  "vmService" : {
+     "vmServiceProto" : "http",
+     "vmServiceAddr" : "msco-cf-web-dev",
+     "vmServiceURI" : "/vmf/api",
+     "vmServicePort" : "80"
+   }
+}

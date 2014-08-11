@@ -1,0 +1,22 @@
+{
+  "name": "msco-training-service",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "ng-file-upload-shim": "1.6.5",
+    "angular": "~1.2.21",
+    "angular-mocks": "~1.2",
+    "bootstrap": "~3.1",
+    "angular-bootstrap": "~0.11.0",
+    "ng-file-upload": "1.6.5",
+    "angular-ui-router": "~0.2",
+    "angularjs-truncate": "*",
+    "angular-animate": "~1.2.18",
+    "stacktrace": "~0.6.0",
+    "angular-resource": "~1.2.19",
+    "ng-grid": "~2.0.12"
+  },
+  "resolutions": {
+    "angular": "~1.2.21"
+  }
+}

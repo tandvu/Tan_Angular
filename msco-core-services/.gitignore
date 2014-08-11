@@ -1,0 +1,9 @@
+/target/
+.settings/
+.project
+msco-common/.classpath
+msco-common/.project
+msco-file-management-service/.classpath
+msco-file-management-service/.project
+msco-process-automation-service/.classpath
+msco-process-automation-service/.project

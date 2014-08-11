@@ -1,0 +1,29 @@
+{
+    "name": "TEST2",
+    "computerName": "TEST2",
+    "systemName": "JSAF",
+    "description": "This is a test",
+    "version": "4.4.4",
+    "vlans": [
+        {
+            "name": "App VLAN",
+            "type": "App"
+        },
+        {
+            "name": "Db VLAN",
+            "type": "Db"
+        },
+        {
+            "name": "Distributed Interactive Simulation (DIS) VLAN",
+            "type": "Dis"
+        },
+        {
+            "name": "Org VLAN",
+            "type": "Org"
+        }
+    ],
+    "templateName": "TEST_JSAF",
+    "deploymentStatus": "NOT_DEPLOYED",
+    "time": "2014-07-15 13:23:13",
+    "workingStatus":{"status":"Running"}
+}

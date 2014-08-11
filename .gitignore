@@ -1,0 +1,7 @@
+.DS_Store
+.jshintrc
+node_modules
+*.tar.gz
+*.key
+*.pem
+*.crt

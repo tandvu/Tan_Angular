@@ -1,0 +1,26 @@
+<div ng-controller="OverviewCtrl">
+<h2>&nbsp;Upcoming Tasks</h2>
+<div align="right">{{unstartedTaskList.length}} TASKS &nbsp;&nbsp;</div>
+<table class="table table-striped" style="width:90%;" align="center">
+    <thead>
+    <tr>
+        <th> Name </th>
+        <th> Mission </th>
+        <th> Role </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="item in unstartedTaskList">
+        <td>
+            {{item.name}}
+        </td>
+        <td>
+            {{item.missionName}}
+        </td>
+        <td>
+            {{item.role}}
+        </td>
+    </tr>
+    </tbody>
+</table>
+</div>

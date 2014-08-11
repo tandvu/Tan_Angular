@@ -1,0 +1,31 @@
+doctype html
+html(lang="en")
+  head
+    title Generic Database Role Management Utility
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+    link(rel="stylesheet", href="/lib/bootstrap/css/bootstrap.min.css")
+    link(rel="stylesheet", href="/stylesheets/style.css")
+        
+    script(src="/lib/jquery/jquery-1.11.0.min.js")
+    script(src="/lib/bootstrap/js/bootstrap.min.js")
+    script(src="/javascripts/login.js")
+body(role="document")
+  div(class="container")
+    div#loginPanel(class="panel panel-default")
+        div.panel-heading Please Sign In
+        div.panel-body
+            form#loginForm(role="form" action="/login" method="POST")
+              div(class="form-group")
+                  label(for="userLogin" class="control-label") Username
+                  input#userLogin(class="form-control" name="userLogin", type="input")
+
+              div(class="form-group")
+                  label(for="userPassword" class="control-label") Password
+                  input#userPassword(class="form-control" name="userPassword", type="password")
+                  span(class="glyphicon form-control-feedback")
+
+              button#loginSubmit(type="button" class="btn btn-primary btn-block") Login
+
+              div(id="messageLoginError" class="alert alert-danger")
+                | Incorrect email address or password.

@@ -1,0 +1,29 @@
+body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #eee;
+}
+
+.filter-control {
+  margin-bottom: 5px;
+}
+
+.listbox-selector {
+  margin-top: 10px;
+}
+
+#loginPanel {
+	max-width: 350px;
+	margin: 0 auto;
+}
+
+#messageLoginError {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  display: none;
+}
+
+.selectable_header, .selected_header {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}

@@ -1,0 +1,18 @@
+{
+  "_collectiondata": [
+    {
+      "name": "SandBox_GCCS-J",
+      "system_name": "GCCS-J",
+      "description": "C2 Viewer",
+      "version": "4.3",
+      "unique_cloud_vm_id": "",
+      "VLAN": "21",
+      "template_uri": "C:\\OVFs\\MSCO-SOL10GCL.ovf",
+      "properties": "",
+      "deployment_status": "undeployed",
+      "url": "http://msco-db.sd.spawar.navy.mil/nm.php/SandBox/TrngEventVirtualSystems/1401386382364",
+      "time": "2014-05-29 10:59:42",
+      "cpu_usage": "50"
+    }
+  ]
+}

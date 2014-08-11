@@ -1,0 +1,49 @@
+[{
+    "name": "Provide Command and Control",
+    "status": {
+        "green": "4",
+        "blue": "1",
+        "yellow": "1",
+        "red": "0"
+    }
+},
+{
+    "name": "Communicate Operational Information",
+    "status": {
+        "green": "2",
+        "blue": "1",
+        "yellow": "3",
+        "red": "0"
+    }
+}, {
+    "name": "Assess Operational Situation",
+    "status": {
+        "green": "5",
+        "blue": "1",
+        "yellow": "8",
+        "red": "3"
+}}, {
+    "name": "Prepare Plans and Orders",
+    "status": {
+        "green": "9",
+        "blue": "5",
+        "yellow": "4",
+        "red": "1"
+    }
+}, {
+    "name": "Command Subordinate Forces",
+    "status": {
+        "green": "4",
+        "blue": "1",
+        "yellow": "4",
+        "red": "2"
+    }
+}, {
+    "name": "Coordinate Personnel Recovery",
+    "status": {
+        "green": "11",
+        "blue": "4",
+        "yellow": "1",
+        "red": "1"
+    }	
+}]

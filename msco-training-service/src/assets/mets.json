@@ -1,0 +1,96 @@
+[
+  {
+    "PersonnelRecovery":[
+      {
+        "number" : "TA 6.2",
+        "name" : "Execute Personnel Recovery Operations",
+        "description" : "Accomplish the personnel recovery execution tasks (report, locate, support, recover and reintegrate) to recover US military, Department of Defense (DOD) civilians and contractors, and other designated personnel using unassisted, opportune,  component, joint, multinational, and nonmilitary organizations capabilities.",
+        "measures": [
+          { "number": "M1",
+            "measureText": "  XX Percent of isolated personnel able to report their situation/location."},
+          { "number": "M2",
+            "measureText": "XX Minutes to notify higher echelon and parallel commands following initial report of an isolating incident."},
+          { "number": "M3",
+            "measureText": "Able to locate isolated personnel within appropriate amount of time."},
+          { "number": "M4",
+            "measureText": "Personnel Recovery (PR) mission procedures include analyzing and corroborating location information before passing with source and time stamp to other PR coordination nodes and forces."}
+        ],
+        "isUsed": "1"
+
+      },{
+        "number" : "ST 4.3.1",
+        "name" : "Establish and Coordinate Movement Services within Theater",
+        "description" : "To move personnel, equipment, and supplies to sustain theater strategy, geographic combatant commander's campaigns, and joint operations.  Also, to allocate transportation resources for moving forces into a position to execute campaigns and joint operations.  This activity includes transportation mode operations, and movement management and control.  Transportation mode operations includes preparing, submitting, and processing in-transit visibility (ITV) data; moving cargo, equipment, and personnel by various modes and within various levels of service (includes express movement of high-value items); and providing transportation resources to support theater strategy, campaigns, and joint operations.  Movement control includes movement control for onward movement.  Terminal operations include loading, unloading, and documentation at air, water, rail, and truck terminals.",
+        "measures": [
+          { "number": "M1",
+            "measureText": "  XX hours for priority cargo to move from reception in theater to customer."},
+          { "number": "M2",
+            "measureText": "XX days for general cargo to move from reception in theater to customer."},
+          { "number": "M3",
+            "measureText": "XX Instances of changes in transportation mode from theater reception until end-delivery."},
+          { "number": "M4",
+            "measureText": "XX Passenger miles provided per day."},
+          { "number": "M5",
+            "measureText": "XX Percent of key movement facilities (such as ports of embarkation (POEs), intermediate staging bases (ISBs), and ports of debarkation (PODs)) involved in theater movement plans, identified during course of action (COA) development."}
+        ],
+        "isUsed": "1"
+
+      }
+
+    ]
+  }, {
+    "DisasterRelief": [
+      {
+        "number" : "TA 6.2",
+        "name" : "Execute Personnel Recovery Operations",
+        "description" : "Accomplish the personnel recovery execution tasks (report, locate, support, recover and reintegrate) to recover US military, Department of Defense (DOD) civilians and contractors, and other designated personnel using unassisted, opportune,  component, joint, multinational, and nonmilitary organizations capabilities.",
+        "measures": [
+          { "number": "M1",
+            "measureText": "  XX Percent of isolated personnel able to report their situation/location."},
+          { "number": "M2",
+            "measureText": "XX Minutes to notify higher echelon and parallel commands following initial report of an isolating incident."},
+          { "number": "M3",
+            "measureText": "Able to locate isolated personnel within appropriate amount of time."},
+          { "number": "M4",
+            "measureText": "Personnel Recovery (PR) mission procedures include analyzing and corroborating location information before passing with source and time stamp to other PR coordination nodes and forces."}
+        ],
+        "isUsed": "1"
+
+      },{
+        "number" : "ST 4.3.1",
+        "name" : "Establish and Coordinate Movement Services within Theater",
+        "description" : "To move personnel, equipment, and supplies to sustain theater strategy, geographic combatant commander's campaigns, and joint operations.  Also, to allocate transportation resources for moving forces into a position to execute campaigns and joint operations.  This activity includes transportation mode operations, and movement management and control.  Transportation mode operations includes preparing, submitting, and processing in-transit visibility (ITV) data; moving cargo, equipment, and personnel by various modes and within various levels of service (includes express movement of high-value items); and providing transportation resources to support theater strategy, campaigns, and joint operations.  Movement control includes movement control for onward movement.  Terminal operations include loading, unloading, and documentation at air, water, rail, and truck terminals.",
+        "measures": [
+          { "number": "M1",
+            "measureText": "  XX hours for priority cargo to move from reception in theater to customer."},
+          { "number": "M2",
+            "measureText": "XX days for general cargo to move from reception in theater to customer."},
+          { "number": "M3",
+            "measureText": "XX Instances of changes in transportation mode from theater reception until end-delivery."},
+          { "number": "M4",
+            "measureText": "XX Passenger miles provided per day."},
+          { "number": "M5",
+            "measureText": "XX Percent of key movement facilities (such as ports of embarkation (POEs), intermediate staging bases (ISBs), and ports of debarkation (PODs)) involved in theater movement plans, identified during course of action (COA) development."}
+        ],
+        "isUsed": "1"
+
+      },{
+        "number": "SST 5.0.0",
+        "name": "Solid State Transmission",
+        "description": "hipster ipsum",
+        "measures": [
+          {
+            "number":"T1",
+            "measureText":"The original"
+          }, {
+            "number":"T2",
+            "measureText":"Liquid metal"
+          }
+
+        ],
+        "isUsed": "1"
+
+      }
+    ]
+  }
+]

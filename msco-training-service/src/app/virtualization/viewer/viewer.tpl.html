@@ -1,0 +1,4 @@
+<div ng-controller="ViewerCtrl">
+    <h4 class="text-center" style="margin-top: 20px; margin-bottom: 20px" >{{exercise.name}} | Virtual Machines &nbsp <i ng-class="waitingOnVMs ? 'fa fa-refresh fa-spin' : 'fa fa-refresh'" ng-click="queryVMs()" style="cursor: pointer"></i></h4>
+    <div class="gridStyle" ng-grid="vmGridOptions"></div>
+</div>
